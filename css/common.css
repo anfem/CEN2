@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+*, *:after, *:before {box-sizing: border-box;}
+* {outline:0 !important;} /* focus 발생 시 태그에 파란색 라인 생김 방지 */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin: 0; padding: 0;}
+html {-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);} /* 화면 꾹 누르면 메뉴 나타남, 사용자가 클릭 및 드래그 기능 이용함, 링크 클릭 시 밑줄/아웃라인 생김 기능들 방지 */
+body {min-width:320px; background: #fff; word-wrap: break-word; word-break: break-all; -webkit-text-size-adjust:none; font-family: 'Montserrat', sans-serif;}
+:lang(ko) {font-family: 'Noto Sans KR', sans-serif; /* 한글만 별도로 지정 */}
+
+fieldset,img {border: 0;}
+dl,ul,ol,menu,li {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content:''; content: none;}
+input,select,textarea,button {font-size: 100%; vertical-align: middle;}
+button {border: 0; background-color: transparent; cursor: pointer;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+input[type="text"],input[type="password"],input[type="submit"],input[type="search"] {-webkit-appearance:none; border-radius: 0;}
+input:checked[type="checkbox"] {background-color:#666; -webkit-appearance:checkbox;}
+button,input[type="button"],input[type="submit"],input[type="reset"],input[type="file"] {-webkit-appearance:button; border: 0; border-radius:0}
+input[type="search"]::-webkit-search-cancel-button {-webkit-appearance:none}
+
+a {color:#333; text-decoration: none}
+a:active, a:hover {text-decoration: none}
+address,caption,cite,code,dfn,em,var {font-style: normal;}
+p {letter-spacing: -0.08rem}
+
+/* Layout Common */
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+#wrap {float: left; width: 100%; position:relative;}
+#header {float: left; width: 100%;}
+#content {float: left; width: 100%;}
+#footer {float: left; width: 100%;}
