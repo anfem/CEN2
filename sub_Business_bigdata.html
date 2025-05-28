@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CEN코퍼레이션</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+		    let $main = $('.main_slider');
+		    let $thumb = $('.thumb_slider');
+
+			$('.slice_area_01').slick({
+      			adaptiveHeight: true,
+			    slidesToShow: 1,
+			    arrows: false,
+			    autoplay: true,
+   				infinite: true,
+   				asNavFor: '.slice_area_02 , text_slider'
+			});
+
+			$('.slice_area_02').slick({
+   				asNavFor: '.slice_area_01 , text_slider',
+			    slidesToShow: 3,
+			    slidesToScroll: 1,
+			    dots: false,
+  				arrows: false,
+			    centerMode: false,
+			    focusOnSelect: true
+			});
+
+			$('.thumb_slider .sd_item').first().remove();
+
+			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		      $('.text_area .text_box').removeClass('active');
+		      $('.text_area .text_box').eq(nextSlide).addClass('active');
+		    });
+
+		    $('.text_area .text_box').eq(0).addClass('active');
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<!------글로벌 네비------->
+		<header id="gnb">
+			<div class="gnb_wrap">
+				<div id="logo">
+					<a href="./index.html" class="def_logo">
+						<img src="./images/logo_w.svg" alt="CEN코퍼레이션 화이트">
+					</a>
+					<a href="./index.html" class="tra_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</a>
+				</div>
+				<div class="nb_wrap">
+					<ul>
+						<li><a href="./sub_about_us.html">회사소개</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">사업분야</a></li>
+						<li><a href="./sub_Business_IoT.html">솔루션</a></li>
+						<li><a href="#">연구개발</a></li>
+						<li><a href="#">홍보센터</a></li>
+					</ul>
+				</div>
+				<div class="right_box">
+					<div class="transrate"></div>
+					<div class="mobile_menu">메뉴</div>
+				</div>
+			</div>
+			<div class="sub_menu">
+				<!--ABOUT US-->
+				<ul>
+					<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+				</ul>
+				<!--사업분야-->
+				<ul>
+					<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+					<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
+					<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
+					<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
+					<li><a href="#">인증솔루션</a></li>
+					<li><a href="#">AI 교육사업부</a></li>
+				</ul>
+				<!--솔루션-->
+				<ul>
+					<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+					<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+					<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+					<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+					<li><a href="./sub_solution_dron.html">드론관제</a></li>
+				</ul>
+				<!--연구개발-->
+				<ul>
+					<li><a href="#">건설기계 전동화 과제</a></li>
+					<li><a href="#">비가청 기술 안전솔루션</a></li>
+					<li><a href="#">차세대 우주항공용 초고속 무선통신 PHY 응용 플랫폼</a></li>
+				</ul>
+				<!--홍보센터-->
+				<ul>
+					<li><a href="#">인증현황</a></li>
+					<li><a href="#">인재채용</a></li>
+				</ul>
+			</div>
+		</header>
+		<!------글로벌 네비END------->
+
+		<div class="SubBg">
+			<div class="text_area">
+				<h1>사업분야</h1>
+			</div>
+
+			<div class="section_indicator">
+				<a href="./sub_Business_IoT.html"><span>IoT 종합관제</span></a>
+				<a href="./sub_Business_bigdata.html" class="active"><span>빅데이터</span></a>
+				<a href="./sub_Business_Smart_Drone.html"><span>Smart Drone & Road</span></a>
+				<a href="./sub_Business_SI_SM.html"><span>공공기관 SI & SM</span></a>
+				<a href="#"><span>인증솔루션</span></a>
+				<a href="#"><span>AI 교육사업부</span></a>
+			</div>
+		</div>
+
+		<div class="fixed_scroll_center">
+			<div class="fixed_section">
+				<div class="fixed_wrap">
+					<div class="title">
+						<h3>빅데이터</h3>
+					</div>
+					<h4>데이터 기반의 지능형 의사결정 파트너</h4>
+					<p>CEN은 산업 현장과 도시 인프라, 에너지, 환경, 모빌리티 등 다양한 영역에서 수집된 데이터를 기반으로 의미 있는 인사이트를 발굴하고, 고도화된 데이터 분석 및 시각화 서비스를 제공합니다.</p>
+					<h4 class="comment">"현장에 최적화된 빅데이터 플랫폼 구축부터<br>인공지능 분석까지, 데이터를 가치로 전환합니다."</h4>
+				</div>
+			</div>
+
+			<div class="scroll_section">
+				<div class="scroll_item">
+					<div class="info_title">
+						<h4><span>Core Features</span><br>주요 기능</h4>
+					</div>
+					<div class="object_item">
+						<div class="circle c_item1 active"><p>데이터 수집<br>적재</p></div>
+						<div class="circle c_item7"><p>정제 및 저장</p></div>
+						<div class="circle c_item8"><p>AI 분석<br>및 예측</p></div>
+						<div class="circle c_item9"><p>시각화<br>대시보드</p></div>
+						<div class="circle c_item10"><p>정책·운영<br>보고서 자동화</p></div>
+						<div class="center_circle">
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>IoT 센서로 수집된 온도,<br>습도, 전력, 출입 등 주요<br>데이터를 실시간 시각화</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="list_wrap marg">
+					<div class="info_title">
+						<h4><span>System Architecture</span><br>기술 구성</h4>
+					</div>
+					<div class="list_items"><div class="squar"></div><p>빅데이터 플랫폼: Hadoop, Spark, Kafka, Hive, NiFi</p></div>
+					<div class="list_items"><div class="squar"></div><p>AI/ML: Python, TensorFlow, PyTorch, AutoML</p></div>
+					<div class="list_items"><div class="squar"></div><p>데이터 시각화: Grafana, Kibana, Tableau, Power BI</p></div>
+					<div class="list_items"><div class="squar"></div><p>데이터베이스: PostgreSQL, MongoDB, InfluxDB</p></div>
+					<div class="list_items"><div class="squar"></div><p>API 및 보안: REST API, OAuth2, 데이터 암호화</p></div>
+				</div>
+
+				<div class="scroll_item">
+					<div class="info_title">
+						<h4><span>Case Study</span><br>적용 사례</h4>
+					</div>
+					<div class="object_item2">
+						<h4 class="sub_title">비행 특별비행승인 신청 처리 간소화</h4>
+						<div class="content_wrap">
+							<div class="img_wrap">
+								<img src="./images/big_data_sample.png" alt="">
+								<div class="list_items"><div class="squar"></div><p>발주사 : 한국도로공사(국토교통부)</p></div>
+								<div class="list_items"><div class="squar"></div><p>수행기간 : 2020년 3월 ~ 2020년 11월</p></div>
+								<div class="list_items"><div class="squar"></div><p>CENplus  플랫폼 활용 전국 교통 모빌리티 빅데이터 연동 및 국가교통정보 교통분석 시각화</p></div>
+							</div>
+						</div>
+						<h4 class="sub_title">전남테크노파크 – 5G 드론 빅데이터시스템(고흥 드론센터)</h4>
+						<div class="content_wrap">
+							<div class="img_wrap">
+								<img src="./images/big_data_sample2.png" alt="">
+								<div class="list_items"><div class="squar"></div><p>발주사 : 전남테크노파크</p></div>
+								<div class="list_items"><div class="squar"></div><p>수행기간 : 2024년 11월 ~ 2027년 11월</p></div>
+								<div class="list_items"><div class="squar"></div><p> CENplus  플랫폼 활용 머신러닝기반 영상정보 분석시스템 과 연동 및 영상 이미지 데이터 수집 및 저장, 전처리 가공 및 변환</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="inquiry_section">
+			<div class="text_box">
+				<h3>도입문의 및 데모 요청</h3>
+				<div class="ico_t">
+					<img src="./images/ion_call-sharp_w.svg" alt=""><p>031-8067-8633</p>
+				</div>
+				<div class="ico_t">
+					<img src="./images/e_mail_w.svg" alt=""><p>son070@cen-corp.co.kr</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer_wrap">
+				<div class="left_cotents footer_item">
+					<div class="logo">
+						<img src="./images/logo_w.svg" alt="">
+					</div>
+					<span>© 2021 CEN Corporation Inc. All rights reserved.</span>
+					<div class="adress">
+						<h3>Address</h3>
+						<p>경기도 용인시 기흥구 기흥로 58 기흥 ICT밸리 SKV1 B동 1105, 1106호</p>
+					</div>
+				</div>
+				<div class="medle_cotents footer_item">
+					<h3>CEN Corporation</h3>
+					<ul>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">SOLUTION</a></li>
+						<li><a href="#">CAREERS</a></li>
+						<li><a href="#">COMPANY</a></li>
+					</ul>
+				</div>
+				<div class="right_cotents footer_item">
+					<div class="call">
+						<h3>Call Us</h3>
+						<p><span>Tel</span> +82(0)31-8067-8633</p>
+						<p><span>Fax</span> +82(0)31-8067-8634</p>
+					</div>
+					<div class="email">
+						<h3>Email US</h3>
+						<p>master@cen-corp.co.kr</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+		  function syncFixedSectionHeight() {
+		    const windowWidth = $(window).width();
+
+		    if (windowWidth >= 1024) {
+		      const $parent = $('.fixed_scroll_center');
+		      const $fixedSection = $('.fixed_section');
+
+		      const parentHeight = $parent.outerHeight();
+		      $fixedSection.height(parentHeight);
+		    } else {
+		      // 1024px 미만일 경우, height 속성 제거 (CSS 제어 허용)
+		      $('.fixed_section').css('height', '');
+		    }
+		  }
+
+		  // 최초 로딩 시 실행
+		  syncFixedSectionHeight();
+
+		  // 윈도우 크기 변경 시에도 다시 실행
+		  $(window).on('resize', function() {
+		    syncFixedSectionHeight();
+		  });
+		});
+	</script>
+</body>

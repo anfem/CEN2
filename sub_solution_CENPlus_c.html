@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CEN코퍼레이션</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+		    let $main = $('.main_slider');
+		    let $thumb = $('.thumb_slider');
+
+			$('.slice_area_01').slick({
+      			adaptiveHeight: true,
+			    slidesToShow: 1,
+			    arrows: false,
+			    autoplay: true,
+   				infinite: true,
+   				asNavFor: '.slice_area_02 , text_slider'
+			});
+
+			$('.slice_area_02').slick({
+   				asNavFor: '.slice_area_01 , text_slider',
+			    slidesToShow: 3,
+			    slidesToScroll: 1,
+			    dots: false,
+  				arrows: false,
+			    centerMode: false,
+			    focusOnSelect: true
+			});
+
+			$('.thumb_slider .sd_item').first().remove();
+
+			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		      $('.text_area .text_box').removeClass('active');
+		      $('.text_area .text_box').eq(nextSlide).addClass('active');
+		    });
+
+		    $('.text_area .text_box').eq(0).addClass('active');
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<!------글로벌 네비------->
+		<header id="gnb">
+			<div class="gnb_wrap">
+				<div id="logo">
+					<a href="./index.html" class="def_logo">
+						<img src="./images/logo_w.svg" alt="CEN코퍼레이션 화이트">
+					</a>
+					<a href="./index.html" class="tra_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</a>
+				</div>
+				<div class="nb_wrap">
+					<ul>
+						<li><a href="./sub_about_us.html">회사소개</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">사업분야</a></li>
+						<li><a href="./sub_Business_IoT.html">솔루션</a></li>
+						<li><a href="#">연구개발</a></li>
+						<li><a href="#">홍보센터</a></li>
+					</ul>
+				</div>
+				<div class="right_box">
+					<div class="transrate"></div>
+					<div class="mobile_menu">메뉴</div>
+				</div>
+			</div>
+			<div class="sub_menu">
+				<!--ABOUT US-->
+				<ul>
+					<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+				</ul>
+				<!--사업분야-->
+				<ul>
+					<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+					<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
+					<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
+					<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
+					<li><a href="#">인증솔루션</a></li>
+					<li><a href="#">AI 교육사업부</a></li>
+				</ul>
+				<!--솔루션-->
+				<ul>
+					<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+					<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+					<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+					<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+					<li><a href="./sub_solution_dron.html">드론관제</a></li>
+				</ul>
+				<!--연구개발-->
+				<ul>
+					<li><a href="#">건설기계 전동화 과제</a></li>
+					<li><a href="#">비가청 기술 안전솔루션</a></li>
+					<li><a href="#">차세대 우주항공용 초고속 무선통신 PHY 응용 플랫폼</a></li>
+				</ul>
+				<!--홍보센터-->
+				<ul>
+					<li><a href="#">인증현황</a></li>
+					<li><a href="#">인재채용</a></li>
+				</ul>
+			</div>
+		</header>
+		<!------글로벌 네비END------->
+
+		<div class="SubBg">
+			<div class="text_area">
+				<h1>SOLUTION</h1>
+			</div>
+
+			<div class="section_indicator">
+				<a href="./sub_solution_CENPlus_c.html" class="active"><span>CENPlus<br>스마트 시티 플랫폼</span></a>
+				<a href="./sub_solution_Web_RTC.html"><span>Web RTC<br>실시간 통신</span></a>
+				<a href="./sub_solution_AutoML_c.html"><span>Auto ML</span></a>
+				<a href="./sub_solution_Edge_device_c.html"><span>Edge 디바이스<br>관제</span></a>
+				<a href="./sub_solution_dron.html"><span>드론 관제</span></a>
+			</div>
+		</div>
+
+		<div class="fixed_scroll_center">
+			<div class="fixed_section">
+				<div class="fixed_wrap">
+					<div class="title">
+						<h3>CENPlus<br>스마트 시티 플랫폼</h3>
+					</div>
+					<p>CENPlus는 씨이엔코퍼레이션이 자체 개발한 스마트시티 통합 운영 플랫폼으로, 도시 전역에 설치된 IoT 센서와 시스템, AI 분석, 공공 데이터까지 하나로 통합하여 효율적 도시 운영과 시민 안전, 에너지 최적화, 디지털 행정 서비스를 가능하게 합니다.</p>
+					<div class="video_object">
+						<img src="./images/video_sample_1.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="scroll_section">
+				<div class="scroll_item">
+					<div class="info_title">
+						<h4><span>Core Features</span><br>주요 기능</h4>
+					</div>
+					<div class="object_item">
+						<div class="circle c_item3"><p>통합관제</p></div>
+						<div class="circle c_item1 active"><p>AI 기반<br>이상감지</p></div>
+						<div class="circle c_item2"><p>모바일/웹<br>운영 지원</p></div>
+						<div class="circle c_item4"><p>디지털 트윈<br>연계</p></div>
+						<div class="circle c_item5"><p>빅데이터<br>대시보드</p></div>
+						<div class="circle c_item6"><p>IoT 디바이스<br>연동</p></div>
+						<div class="center_circle">
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>CCTV, 교통, 환경, 시설물,<br>재난 등 도시 전 영역<br>모니터링</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="list_wrap">
+					<div class="info_title">
+						<h4><span>Applicable Domains</span><br>적용 분야</h4>
+					</div>
+					<div class="list_items"><div class="squar"></div><p>스마트시티 관제센터</p></div>
+					<div class="list_items"><div class="squar"></div><p>지자체 디지털 행정 시스템</p></div>
+					<div class="list_items"><div class="squar"></div><p>스마트산단 종합운영 플랫폼</p></div>
+					<div class="list_items"><div class="squar"></div><p>스마트 빌딩 및 지능형 방재 시스템</p></div>
+					<div class="list_items"><div class="squar"></div><p>CCTV·센서 통합 보안 관제</p></div>
+					<div class="list_items"><div class="squar"></div><p>디지털트윈 시뮬레이션 환경</p></div>
+				</div>
+
+				<div class="scroll_item">
+					<div class="info_title">
+						<h4><span>Tech Specs</span><br>주요 기술</h4>
+					</div>
+					<div class="object_item2">
+						<h4 class="sub_title">Apache Kafka Cluster 기반 구축</h4>
+						<p class="sub_info">데이터 스트림을 실시간 처리하여 플랫폼 내외적으로 다양한 곳에서 발생되는 데이터 정보들을 한 데 모아 일률적으로 관리하여 처리하는 데이터 허브 역할의 플랫폼을 구축하고 구현합니다.</p>
+						<div class="banner_wrap">
+							<div class="column_line">
+								<div class="banner_item item_b1 time2_ico">
+									<h3><span>CEN Plus</span><br>실시간 처리</h3>
+									<img src="#" alt="">
+									<p>스마트시티 통합플랫폼 데이터를 실시간으로 처리하는 것이 가능하기 때문에 외부에서 발생되는 이벤트 등의 정보를 플랫폼에 실기간으로 처리합니다.</p>
+								</div>
+								<div class="banner_item item_p1 infinit_ico">
+									<h3><span>CEN Plus</span><br>내결합성</h3>
+									<img src="#" alt="">
+									<p>메모리가 아닌 디스크에 메시지를 보관하며 클러스터 간 복제본을 작기 때문에 높은 데이터 내구성을 가지며 데이터에 대한 용이한 엑세스 방식을 제공합니다.</p>
+								</div>
+							</div>
+
+							<div class="column_line">
+								<div class="banner_item item_p2 compass_ico">
+									<h3><span>CEN Plus</span><br>고성능 확장성</h3>
+									<img src="#" alt="">
+									<p>데이터를 순차적으로 저장하고 처리하는 고성능 데이터 파이프라인을 제공하면 분산 처리 시스템으로서의 높은 확장성을 가집니다.</p>
+								</div>
+								<div class="banner_item item_y1 setting2_ico">
+									<h3><span>CEN Plus</span><br>연계 통합의 데이터 허브 역할</h3>
+									<img src="#" alt="">
+									<p>다양한 종류의 데이터베이스나 시스템과의 연계 및 데이터 이동. 복제를 쉽게 처리할수 있으며 통합된 데이터 스토리지 관리 인터페이스를 제공합니다.</p>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="sub_title">MQTT IoT Broker 기반 실시간 서비스 제공</h4>
+						<p class="sub_info">Kafka 클러스터와 데이터베이스 간 파이프라인을 제공하는 Kafka Connect 및 Kafka Connect 와 Pub-Sub 모델의 경량 메시징 프로토콜인 MQTT를 사용하여 이벤트, 소통정보 등의 데이터를 실기간으로 전달 처리하고, 관련 서비스를 제공합니다.</p>
+						<div class="rtc_wrap">
+							<img src="./images/CENPlus.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="inquiry_section">
+			<div class="text_box">
+				<h3>도입문의 및 데모 요청</h3>
+				<div class="ico_t">
+					<img src="./images/ion_call-sharp_w.svg" alt=""><p>031-8067-8633</p>
+				</div>
+				<div class="ico_t">
+					<img src="./images/e_mail_w.svg" alt=""><p>son070@cen-corp.co.kr</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer_wrap">
+				<div class="left_cotents footer_item">
+					<div class="logo">
+						<img src="./images/logo_w.svg" alt="">
+					</div>
+					<span>© 2021 CEN Corporation Inc. All rights reserved.</span>
+					<div class="adress">
+						<h3>Address</h3>
+						<p>경기도 용인시 기흥구 기흥로 58 기흥 ICT밸리 SKV1 B동 1105, 1106호</p>
+					</div>
+				</div>
+				<div class="medle_cotents footer_item">
+					<h3>CEN Corporation</h3>
+					<ul>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">SOLUTION</a></li>
+						<li><a href="#">CAREERS</a></li>
+						<li><a href="#">COMPANY</a></li>
+					</ul>
+				</div>
+				<div class="right_cotents footer_item">
+					<div class="call">
+						<h3>Call Us</h3>
+						<p><span>Tel</span> +82(0)31-8067-8633</p>
+						<p><span>Fax</span> +82(0)31-8067-8634</p>
+					</div>
+					<div class="email">
+						<h3>Email US</h3>
+						<p>master@cen-corp.co.kr</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+		  function syncFixedSectionHeight() {
+		    const windowWidth = $(window).width();
+
+		    if (windowWidth >= 1024) {
+		      const $parent = $('.fixed_scroll_center');
+		      const $fixedSection = $('.fixed_section');
+
+		      const parentHeight = $parent.outerHeight();
+		      $fixedSection.height(parentHeight);
+		    } else {
+		      // 1024px 미만일 경우, height 속성 제거 (CSS 제어 허용)
+		      $('.fixed_section').css('height', '');
+		    }
+		  }
+
+		  // 최초 로딩 시 실행
+		  syncFixedSectionHeight();
+
+		  // 윈도우 크기 변경 시에도 다시 실행
+		  $(window).on('resize', function() {
+		    syncFixedSectionHeight();
+		  });
+		});
+	</script>
+</body>
