@@ -461,6 +461,12 @@ footer p span {font-size:14px;}
 
 
 @media(max-width: 1024px) {
+
+  #gnb:hover {background-color: transparent !important;}
+  #gnb:hover .gnb_wrap > .nb_wrap > ul > li > a {color: inherit !important;}
+  #gnb:hover .gnb_wrap > .right_box {color: inherit !important;}
+  #gnb:hover .gnb_wrap > #logo > .tra_logo {opacity: 0;}
+
   #gnb {height: auto !important; overflow: visible !important;}
   #gnb > .gnb_wrap > .nb_wrap {display: none;}
   #gnb > .sub_menu {display:none;}
@@ -639,6 +645,7 @@ footer p span {font-size:14px;}
 }
 
 @media(max-width: 480px){
+
   #section2 > .slider_wrap {margin: 40px auto 0; padding: 40px 0 0;}
   .slice_area_02 > .sd_item{width:220px; height:100px; margin:0 0.5% 0 0; overflow: hidden; border-radius:16px;}
   .logo_contain > a > img {object-fit: cover; width: 100%; overflow: hidden;}
