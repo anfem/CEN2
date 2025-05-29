@@ -1,5 +1,32 @@
 @charset 'utf-8';
 
+#mobile_menu_bg {  width: 100vw; height: 100vh; position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(2px); z-index: 999; display: none; overflow: hidden;}
+@keyframes slideInBounce {
+  0%   { transform: translateX(100%); }
+  60%  { transform: translateX(-10px); }
+  80%  { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+#mobile_menu_bg > .mobile_menu_wrap {position: absolute; top: 0; right: 0; height: 100%; background: #fff; width: 80vw; max-width: 400px; transform: translateX(100%); transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1); will-change: transform;}
+#mobile_menu_bg.active .mobile_menu_wrap {transform: translateX(0);}
+#mobile_menu_bg > .mobile_menu_wrap > .menu_top {width:100%; display:flex; justify-content: space-between; align-items: center; padding:12px 12px 8px; border:1px solid #dfdfdf;}
+#mobile_menu_bg > .mobile_menu_wrap > .menu_top > .mobile_logo {width:90px;}
+#mobile_menu_bg > .mobile_menu_wrap > .menu_top > .close_btn {width:24px; height:24px; display: flex; justify-content: center; align-items: center;}
+#mobile_menu_bg > .mobile_menu_wrap > .m_menu_contents {width:100%; padding:0 16px 0;}
+#mobile_menu_bg > .mobile_menu_wrap > .m_menu_contents > ul > li {}
+#mobile_menu_bg > .mobile_menu_wrap > .m_menu_contents > ul > li > .m_menu_title {font-size:18px; font-weight:600; display:flex; justify-content: space-between; align-items: center; padding:12px 8px;}
+#mobile_menu_bg > .mobile_menu_wrap > .m_menu_contents > ul > li > .m_menu_title.active {color:#005baa;}
+#mobile_menu_bg > .mobile_menu_wrap > .m_menu_contents > ul > li > ul {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.m_menu_contents > ul > li.open > ul {
+  heihgt:max-content;
+}
+#mobile_menu_bg > .mobile_menu_wrap > .m_menu_contents > ul > li > ul li > a {padding:8px 16px; color:#666; display: block;}
+
+
 
 #gnb {width:100%; height:max-content; display:flex; flex-direction: column; justify-content: center; align-items: center; position:absolute; padding:0px 0 0; z-index: 99; overflow:hidden; transition: height 0.3s ease; transition: ease 0.3s all;}
 #gnb:hover {background-color:rgba(255,255,255,0.9); transition: ease 0.3s all;}
@@ -11,14 +38,17 @@
 #gnb > .gnb_wrap > #logo > a img {height:100%;}
 #gnb > .gnb_wrap > #logo > .tra_logo {opacity: 0; transition:all 0.3s ease;}
 #gnb:hover .gnb_wrap > #logo > .tra_logo {opacity: 1; transition:all 0.3s ease;}
+
+
 #gnb > .gnb_wrap > .nb_wrap {width:100%; max-width:1080px; margin:0 5.5556%; display:flex; justify-content: center; flex-direction:column; position:relative;}
 #gnb > .gnb_wrap > .nb_wrap > ul {width:100%; display:flex; justify-content: space-between; align-items:center;}
-#gnb > .gnb_wrap > .nb_wrap > ul > li {width:20%; text-align: center;}
+#gnb > .gnb_wrap > .nb_wrap > ul > li {flex:1; text-align: center;}
 #gnb > .gnb_wrap > .nb_wrap > ul > li > a {padding:24px 0; color:#fff; font-size:18px; font-weight:700; width:100%; display:block;}
 /* #gnb > .gnb_wrap > .nb_wrap > ul > li > a:hover {color:#242424; transition: all ease 0.2s; background-color:#fff} */
 #gnb > .gnb_wrap > .right_box {color:#fff; width:9%; margin:0 0 0 16px; max-width:140px; display:flex; justify-content: space-around;}
-#gnb > .sub_menu {width:100%; max-width:1080px; display:flex; justify-content: space-between; position:absolute; left:50%; top:0; transform:translate(-50%,0);}
-#gnb > .sub_menu > ul {width:100%;}
+
+#gnb > .sub_menu {width:100%; max-width:1080px; display:flex; justify-content: space-between; position:absolute;}
+#gnb > .sub_menu > ul {width:100%; flex:1; text-align: center;}
 #gnb > .sub_menu > ul > li {font-size:18px; text-align: center;}
 #gnb > .sub_menu > ul > li > a {color:#b3b3b3; display:block; padding:16px 0; transition: ease 0.1s all; font-size:16px;}
 
@@ -393,6 +423,7 @@ footer p span {font-size:14px;}
 @media(max-width: 1680px) {
   #gnb > .gnb_wrap {padding:0 5.5556%;}
   #gnb > .gnb_wrap > .nb_wrap {max-width:940px;}
+  #gnb > .sub_menu {max-width:940px; flex:1;}
   #section1 > .text_area {position: absolute; left: 8%; top: 52%; transform: translate(0, -50%);}
 }
 
