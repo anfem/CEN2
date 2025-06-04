@@ -13,42 +13,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-
-		    let $main = $('.main_slider');
-		    let $thumb = $('.thumb_slider');
-
-			$('.slice_area_01').slick({
-      			adaptiveHeight: true,
-			    slidesToShow: 1,
-			    arrows: false,
-			    autoplay: true,
-   				infinite: true,
-   				asNavFor: '.slice_area_02 , text_slider'
-			});
-
-			$('.slice_area_02').slick({
-   				asNavFor: '.slice_area_01 , text_slider',
-			    slidesToShow: 3,
-			    slidesToScroll: 1,
-			    dots: false,
-  				arrows: false,
-			    centerMode: false,
-			    focusOnSelect: true
-			});
-
-			$('.thumb_slider .sd_item').first().remove();
-
-			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		      $('.text_area .text_box').removeClass('active');
-		      $('.text_area .text_box').eq(nextSlide).addClass('active');
-		    });
-
-		    $('.text_area .text_box').eq(0).addClass('active');
-		});
-	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -127,8 +91,8 @@
 				<div class="nb_wrap">
 					<ul>
 						<li><a href="./sub_about_us.html">회사소개</a></li>
-						<li><a href="./sub_solution_CENPlus_c.html">사업분야</a></li>
-						<li><a href="./sub_Business_IoT.html">솔루션</a></li>
+						<li><a href="./sub_Business_IoT.html">사업분야</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
 						<li><a href="./sub_Development_Construction">연구개발</a></li>
 						<li><a href="./promotion_Certification.html">홍보센터</a></li>
 					</ul>
@@ -180,7 +144,7 @@
 
 		<div class="SubBg">
 			<div class="text_area">
-				<h1>연구개발</h1>
+				<h1>DEVELOPMENT</h1>
 			</div>
 
 			<div class="section_indicator">
@@ -217,18 +181,18 @@
 					</div>
 					<div class="object_item2">
 						<h4 class="sub_title">PET용 지오펜스 솔루션</h4>
-						<p>비가청 신호를 활용해 반려동물의 지정 구역 이탈을 감지하고, 음성, 진동, 자동 경고음 등을 통해 이탈을 방지하는 솔루션입니다.</p>
+						<p class="title_info">비가청 신호를 활용해 반려동물의 지정 구역 이탈을 감지하고, 음성, 진동, 자동 경고음 등을 통해 이탈을 방지하는 솔루션입니다.</p>
 						<div class="dash_wrap">
 							<div class="solid_item">
-								<h3>FPGA (Field Programmable Gate Array)</h3>
+								<h3>FPGA <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Field Programmable Gate Array</span></h3>
 								<p>실시간 PHY 계층 통신 처리 / 파형 생성 및 변조·복조 / SDR 구성의 핵심 연산기</p>
 							</div>
 							<div class="solid_item">
-								<h3>DAC (Digital to Analog Converter)</h3>
+								<h3>DAC <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Digital to Analog Converter</span></h3>
 								<p>디지털 파형을 아날로그 RF 신호로 변환 / 고속 송신 성능 확보</p>
 							</div>
 							<div class="solid_item">
-								<h3>ADC (Analog to Digital Converter)</h3>
+								<h3>ADC <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Analog to Digital Converter</span></h3>
 								<p>수신된 RF 신호를 고정밀 디지털 데이터로 변환 / 잡음 최소화 설계</p>
 							</div>
 							<div class="solid_item">
@@ -244,13 +208,13 @@
 								<p>우주환경 대응 전력 최적화 / SoC·RF칩·메모리 전원 동시 관리</p>
 							</div>
 							<div class="solid_item">
-								<h3>TRM (Transmit Receive Module)</h3>
+								<h3>TRM <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Transmit Receive Module</span></h3>
 								<p>저잡음 증폭기(LNA), 전력증폭기(PA), 다채널 빔포머 포함한 RF 전방단 회로군</p>
 							</div>
 						</div>
 
 						<h4 class="sub_title">소프트웨어 및 검증 도구</h4>
-						<p>통신 스택, 시뮬레이션 환경, 실시간 검증 도구까지 통합된 소프트웨어 설계</p>
+						<p class="title_info">통신 스택, 시뮬레이션 환경, 실시간 검증 도구까지 통합된 소프트웨어 설계</p>
 						<div class="dash_wrap">
 							<div class="solid_item">
 								<h3>RTOS 적합성 분석</h3>
@@ -321,20 +285,20 @@
 				<div class="medle_cotents footer_item">
 					<h3>CEN Corporation</h3>
 					<ul>
-						<li><a href="#">ABOUT US</a></li>
-						<li><a href="#">SOLUTION</a></li>
-						<li><a href="#">CAREERS</a></li>
-						<li><a href="#">COMPANY</a></li>
+						<li><a href="./sub_about_us.html">ABOUT US</a></li>
+						<li><a href="./sub_Business_IoT.html">BUSINESS</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">SOLUTION</a></li>
+						<li><a href="./sub_Development_Construction.html">DEVELOPMENT</a></li>
 					</ul>
 				</div>
 				<div class="right_cotents footer_item">
 					<div class="call">
-						<h3>Call Us</h3>
+						<h3>Call</h3>
 						<p><span>Tel</span> +82(0)31-8067-8633</p>
 						<p><span>Fax</span> +82(0)31-8067-8634</p>
 					</div>
 					<div class="email">
-						<h3>Email US</h3>
+						<h3>Email</h3>
 						<p>nam3305@cen-corp.co.kr</p>
 					</div>
 				</div>

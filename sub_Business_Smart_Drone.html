@@ -13,42 +13,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-
-		    let $main = $('.main_slider');
-		    let $thumb = $('.thumb_slider');
-
-			$('.slice_area_01').slick({
-      			adaptiveHeight: true,
-			    slidesToShow: 1,
-			    arrows: false,
-			    autoplay: true,
-   				infinite: true,
-   				asNavFor: '.slice_area_02 , text_slider'
-			});
-
-			$('.slice_area_02').slick({
-   				asNavFor: '.slice_area_01 , text_slider',
-			    slidesToShow: 3,
-			    slidesToScroll: 1,
-			    dots: false,
-  				arrows: false,
-			    centerMode: false,
-			    focusOnSelect: true
-			});
-
-			$('.thumb_slider .sd_item').first().remove();
-
-			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		      $('.text_area .text_box').removeClass('active');
-		      $('.text_area .text_box').eq(nextSlide).addClass('active');
-		    });
-
-		    $('.text_area .text_box').eq(0).addClass('active');
-		});
-	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -127,8 +91,8 @@
 				<div class="nb_wrap">
 					<ul>
 						<li><a href="./sub_about_us.html">회사소개</a></li>
-						<li><a href="./sub_solution_CENPlus_c.html">사업분야</a></li>
-						<li><a href="./sub_Business_IoT.html">솔루션</a></li>
+						<li><a href="./sub_Business_IoT.html">사업분야</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
 						<li><a href="./sub_Development_Construction">연구개발</a></li>
 						<li><a href="./promotion_Certification.html">홍보센터</a></li>
 					</ul>
@@ -261,27 +225,69 @@
 						<div class="content_wrap">
 							<div class="img_wrap">
 								<img src="./images/smart_dron1.png" alt="">
-								<div class="list_items"><div class="squar"></div><p>발주사: 한국도로공사</p></div>
-								<div class="list_items"><div class="squar"></div><p>수행기간: 2019년 07월 ~ 2024년 05월</p></div>
-								<div class="list_items"><div class="squar"></div><p>구축내용: 도로 정보 수집 장비(IoT, CCTV, VDS 등) 연계, 통합관제 대시보드<br> 국도 전 구간 실시간 교통정보 분석<br>포트홀 자동탐지, 이상 기후시 교통 통제 시스템 구현</p></div>
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">발주사</div>
+										<div class="row_info">한국도로공사</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">수행기간</div>
+										<div class="row_info">2019년 07월 ~ 2024년 05월</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">구축내용</div>
+										<div class="row_info">도로 정보 수집 장비(IoT, CCTV, VDS 등) 연계, 통합관제 대시보드<br> 국도 전 구간 실시간 교통정보 분석<br>포트홀 자동탐지, 이상 기후시 교통 통제 시스템 구현</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<h4 class="sub_title">민자/지자체 고속도로 통합관리시스템(FTMS) S/W 개발 구축</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
 								<img src="./images/smart_dron2.png" alt="">
-								<div class="list_items"><div class="squar"></div><p>발주사: 한국도로교통공단</p></div>
-								<div class="list_items"><div class="squar"></div><p>수행기간: 2022년 05월 ~ 2025년 05월</p></div>
-								<div class="list_items"><div class="squar"></div><p>구축내용: 운행 데이터, 요금소 센서, 영상정보 통합<br>AI 기반 돌발상황 조기 탐지 및 제설·순찰 효율화</p></div>
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">발주사</div>
+										<div class="row_info">한국도로교통공단</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">수행기간</div>
+										<div class="row_info">2022년 05월 ~ 2025년 05월</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">구축내용</div>
+										<div class="row_info">운행 데이터, 요금소 센서, 영상정보 통합<br>AI 기반 돌발상황 조기 탐지 및 제설·순찰 효율화</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<h4 class="sub_title">화성시 ITS 및 교통통합플랫폼</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
 								<img src="./images/samrt_dron3.png" alt="">
-								<div class="list_items"><div class="squar"></div><p>발주사: 화성시</p></div>
-								<div class="list_items"><div class="squar"></div><p>수행기간: 2022년 06월 ~ 2023년 04월</p></div>
-								<div class="list_items"><div class="squar"></div><p> 구축내용 : 종합상황모니터링, 교통정보<br>(돌발정보, 소통정보,스마트교차로,횡단보도,주차정보), 시설정보, 센터정보)</p></div>
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">발주사</div>
+										<div class="row_info">화성시</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">수행기간</div>
+										<div class="row_info">2022년 06월 ~ 2023년 04월</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">구축내용</div>
+										<div class="row_info">시설정보, 센터정보, 종합상황모니터링, 교통정보<br>(돌발정보, 소통정보,스마트교차로,횡단보도,주차정보), 시설정보, 센터정보)</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -297,7 +303,7 @@
 					<img src="./images/ion_call-sharp_w.svg" alt=""><p>031-8067-8633</p>
 				</div>
 				<div class="ico_t">
-					<img src="./images/e_mail_w.svg" alt=""><p>son070@cen-corp.co.kr</p>
+					<img src="./images/e_mail_w.svg" alt=""><p>kyongminkim@cen-corp.co.kr</p>
 				</div>
 			</div>
 		</div>
@@ -317,20 +323,20 @@
 				<div class="medle_cotents footer_item">
 					<h3>CEN Corporation</h3>
 					<ul>
-						<li><a href="#">ABOUT US</a></li>
-						<li><a href="#">SOLUTION</a></li>
-						<li><a href="#">CAREERS</a></li>
-						<li><a href="#">COMPANY</a></li>
+						<li><a href="./sub_about_us.html">ABOUT US</a></li>
+						<li><a href="./sub_Business_IoT.html">BUSINESS</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">SOLUTION</a></li>
+						<li><a href="./sub_Development_Construction.html">DEVELOPMENT</a></li>
 					</ul>
 				</div>
 				<div class="right_cotents footer_item">
 					<div class="call">
-						<h3>Call Us</h3>
+						<h3>Call</h3>
 						<p><span>Tel</span> +82(0)31-8067-8633</p>
 						<p><span>Fax</span> +82(0)31-8067-8634</p>
 					</div>
 					<div class="email">
-						<h3>Email US</h3>
+						<h3>Email</h3>
 						<p>nam3305@cen-corp.co.kr</p>
 					</div>
 				</div>

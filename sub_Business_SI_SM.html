@@ -13,42 +13,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-
-		    let $main = $('.main_slider');
-		    let $thumb = $('.thumb_slider');
-
-			$('.slice_area_01').slick({
-      			adaptiveHeight: true,
-			    slidesToShow: 1,
-			    arrows: false,
-			    autoplay: true,
-   				infinite: true,
-   				asNavFor: '.slice_area_02 , text_slider'
-			});
-
-			$('.slice_area_02').slick({
-   				asNavFor: '.slice_area_01 , text_slider',
-			    slidesToShow: 3,
-			    slidesToScroll: 1,
-			    dots: false,
-  				arrows: false,
-			    centerMode: false,
-			    focusOnSelect: true
-			});
-
-			$('.thumb_slider .sd_item').first().remove();
-
-			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		      $('.text_area .text_box').removeClass('active');
-		      $('.text_area .text_box').eq(nextSlide).addClass('active');
-		    });
-
-		    $('.text_area .text_box').eq(0).addClass('active');
-		});
-	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -127,8 +91,8 @@
 				<div class="nb_wrap">
 					<ul>
 						<li><a href="./sub_about_us.html">회사소개</a></li>
-						<li><a href="./sub_solution_CENPlus_c.html">사업분야</a></li>
-						<li><a href="./sub_Business_IoT.html">솔루션</a></li>
+						<li><a href="./sub_Business_IoT.html">사업분야</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
 						<li><a href="./sub_Development_Construction">연구개발</a></li>
 						<li><a href="./promotion_Certification.html">홍보센터</a></li>
 					</ul>
@@ -249,43 +213,109 @@
 						<h4 class="sub_title">질병관리청 생명윤리법 관련기관 관리시스템</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
-								<div class="list_items"><div class="squar"></div><p>목표: 생명윤리법에 근거한 기관 관리 및 심의기록 통합</p></div>
-								<div class="list_items"><div class="squar"></div><p>기능: 연구자·IRB·기관 간 역할 기반 통합 운영</p></div>
-								<div class="list_items"><div class="squar"></div><p>심의 신청승인보관 전주기 자동화</p></div>
-								<div class="list_items"><div class="squar"></div><p>국가법령 연계 API 기반 실시간 법령 적용</p></div>
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">목표</div>
+										<div class="row_info">생명윤리법에 근거한 기관 관리 및 심의기록 통합</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">기능</div>
+										<div class="row_info">
+											<ul>
+												<li>연구자·IRB·기관 간 역할 기반 통합 운영</li>
+												<li>심의 신청승인보관 전주기 자동화</li>
+												<li>국가법령 연계 API 기반 실시간 법령 적용</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<h4 class="sub_title">질병관리청 유전자검사기관 e-IRB 시스템</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
-								<div class="list_items"><div class="squar"></div><p>특징: 유전자검사기관 심의 절차 전산화</p></div>
-								<div class="list_items"><div class="squar"></div><p>인체유래물 연구 기록관리·이력 추적</p></div>
-								<div class="list_items"><div class="squar"></div><p> IRB 위원·심의자료 보안 저장소 구성</p></div>
+								<img src="./images/e-IRB.png" alt="">
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">특징</div>
+										<div class="row_info">
+											<ul>
+												<li>유전자검사기관 심의 절차 전산화</li>
+												<li>인체유래물 연구 기록관리·이력 추적</li>
+												<li>IRB 위원·심의자료 보안 저장소 구성</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<h4 class="sub_title">질병관리청 혈액안전관리 시스템</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
-								<div class="list_items"><div class="squar"></div><p>목표: 헌혈공급이상반응 관리까지 전주기 혈액안전관리체계 구축</p></div>
-								<div class="list_items"><div class="squar"></div><p>기능: 혈액제제 이력 추적·이상사례 보고</p></div>
-								<div class="list_items"><div class="squar"></div><p>시도별 혈액 수급 모니터링</p></div>
-								<div class="list_items"><div class="squar"></div><p>KCDC 연계 API 및 지역센터 알림 서비스</p></div>
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">목표</div>
+										<div class="row_info"><p>헌혈공급이상반응 관리까지<br>전주기 혈액안전관리체계 구축</p></div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">기능</div>
+										<div class="row_info">
+											<ul>
+												<li>혈액제제 이력 추적·이상사례 보고</li>
+												<li>시도별 혈액 수급 모니터링</li>
+												<li>KCDC 연계 API 및 지역센터 알림 서비스</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<h4 class="sub_title">한국도로교통공단 MTS (교통단속장비 관리업무시스템)</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
-								<div class="list_items"><div class="squar"></div><p>기능: 고령운전자 대상 시뮬레이터 평가 통합 관리</p></div>
-								<div class="list_items"><div class="squar"></div><p>평가 이력 및 적성검사 결과 전산 연계</p></div>
-								<div class="list_items"><div class="squar"></div><p>운전면허 적합성 판단 지원</p></div>
+								<div class="info_table">
+										<div class="table_row_items">
+											<div class="square"><div class="square"></div></div>
+											<div class="row_title">기능</div>
+											<div class="row_info">
+												<ul>
+													<li>고령운전자 대상 시뮬레이터 평가 통합 관리</li>
+													<li>평가 이력 및 적성검사 결과 전산 연계</li>
+													<li>운전면허 적합성 판단 지원</li>
+												</ul>
+											</div>
+										</div>
+								</div>
 							</div>
 						</div>
 						<h4 class="sub_title">한국교통안전공단 드론 통합관리 시스템</h4>
 						<div class="content_wrap">
 							<div class="img_wrap">
-								<div class="list_items"><div class="squar"></div><p>내용: 무인비행체 등록, 정비이력, 비행계획 관리</p></div>
-								<div class="list_items"><div class="squar"></div><p>사용자 인증, 점검이력, 비행금지구역 자동검출</p></div>
-								<div class="list_items"><div class="squar"></div><p>국토부 드론정책 연계 기반 플랫폼 설계</p></div>
+								<div class="info_table">
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">목표</div>
+										<div class="row_info">
+											<div class="row_info">한국교통안전공단-서울지방항공청-한국공항공사간<br>On/Off 융합 운항안전정보 공유체계 구축</div>
+										</div>
+									</div>
+									<div class="table_row_items">
+										<div class="square"><div class="square"></div></div>
+										<div class="row_title">내용</div>
+										<div class="row_info">
+											<ul>
+												<li>무인비행체 등록, 정비이력, 비행계획 관리</li>
+												<li>사용자 인증, 점검이력, 비행금지구역 자동검출</li>
+												<li>국토부 드론정책 연계 기반 플랫폼 설계</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -321,20 +351,20 @@
 				<div class="medle_cotents footer_item">
 					<h3>CEN Corporation</h3>
 					<ul>
-						<li><a href="#">ABOUT US</a></li>
-						<li><a href="#">SOLUTION</a></li>
-						<li><a href="#">CAREERS</a></li>
-						<li><a href="#">COMPANY</a></li>
+						<li><a href="./sub_about_us.html">ABOUT US</a></li>
+						<li><a href="./sub_Business_IoT.html">BUSINESS</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">SOLUTION</a></li>
+						<li><a href="./sub_Development_Construction.html">DEVELOPMENT</a></li>
 					</ul>
 				</div>
 				<div class="right_cotents footer_item">
 					<div class="call">
-						<h3>Call Us</h3>
+						<h3>Call</h3>
 						<p><span>Tel</span> +82(0)31-8067-8633</p>
 						<p><span>Fax</span> +82(0)31-8067-8634</p>
 					</div>
 					<div class="email">
-						<h3>Email US</h3>
+						<h3>Email</h3>
 						<p>nam3305@cen-corp.co.kr</p>
 					</div>
 				</div>
