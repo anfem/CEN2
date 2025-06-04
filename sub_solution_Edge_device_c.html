@@ -13,42 +13,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-
-		    let $main = $('.main_slider');
-		    let $thumb = $('.thumb_slider');
-
-			$('.slice_area_01').slick({
-      			adaptiveHeight: true,
-			    slidesToShow: 1,
-			    arrows: false,
-			    autoplay: true,
-   				infinite: true,
-   				asNavFor: '.slice_area_02 , text_slider'
-			});
-
-			$('.slice_area_02').slick({
-   				asNavFor: '.slice_area_01 , text_slider',
-			    slidesToShow: 3,
-			    slidesToScroll: 1,
-			    dots: false,
-  				arrows: false,
-			    centerMode: false,
-			    focusOnSelect: true
-			});
-
-			$('.thumb_slider .sd_item').first().remove();
-
-			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		      $('.text_area .text_box').removeClass('active');
-		      $('.text_area .text_box').eq(nextSlide).addClass('active');
-		    });
-
-		    $('.text_area .text_box').eq(0).addClass('active');
-		});
-	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -212,16 +176,36 @@
 						<h4><span>Core Features</span><br>주요 기능</h4>
 					</div>
 					<div class="object_item">
-						<div class="circle c_item3"><p>AI 분석 연계</p></div>
 						<div class="circle c_item1 active"><p>Edge<br>디바이스<br>등록/관리</p></div>
 						<div class="circle c_item2"><p>실시간 상태<br>모니터링</p></div>
-						<div class="circle c_item4"><p>장비 원격제어</p></div>
-						<div class="circle c_item5"><p>장애/이상<br>알림</p></div>
-						<div class="circle c_item6"><p>WebRTC<br>기반 영상 연동</p></div>
+						<div class="circle c_item3"><p>장비 원격제어</p></div>
+						<div class="circle c_item4"><p>장애/이상<br>알림</p></div>
+						<div class="circle c_item5"><p>WebRTC<br>기반 영상 연동</p></div>
+						<div class="circle c_item6"><p>AI 분석 연계</p></div>
 						<div class="center_circle">
 							<div class="text_area">
 								<h3>기능 설명</h3>
 								<p>수천 개 장비의 위치, 상태,<br>속성 통합 등록</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>온도, 전력, 진동, 영상 등<br>주요 센서 데이터<br>실시간 표시</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>ON/OFF, 재부팅, 설정<br> 변경 등 제어 명령 전달</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>이벤트 트리거 기반<br> SMS·PUSH·대시보드<br> 경보</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>현장 카메라 영상 및<br> 제어 통합 관제</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>이상 패턴 탐지, 예지보수<br> 모델 연동 가능</p>
 							</div>
 						</div>
 					</div>
@@ -255,8 +239,52 @@
 						<div class="circle c_item10"><p>AI 연동</p></div>
 						<div class="center_circle">
 							<div class="text_area">
-								<h3>기능 설명</h3>
+								<h3>설명</h3>
 								<p>LoRa, LTE, 5G, RS485,<br>Modbus, Wi-Fi</p>
+							</div>
+							<div class="text_area">
+								<h3>설명</h3>
+								<p>MQTT, HTTP, CoAP,<br> WebSocket 등</p>
+							</div>
+							<div class="text_area">
+								<h3>설명</h3>
+								<p>최대 10,000개 이상<br>연동 가능</p>
+							</div>
+							<div class="text_area">
+								<h3>설명</h3>
+								<p>TLS 암호화, 장비별<br> 인증키, 망분리 구성</p>
+							</div>
+							<div class="text_area">
+								<h3>설명</h3>
+								<p>TensorFlow Lite,<br>OpenVINO 등<br>엣지 분석 엔진 지원</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="info_title" style="margin:60px 0 0;">
+						<h4><span>Strong Point</span><br>CEN AutoML의 강점</h4>
+					</div>
+					<div class="object_item2" style="margin:0 0 60px;">
+						<div class="dash_wrap">
+							<div class="solid_item">
+								<h3>현장형 분석 중심</h3>
+								<p>제조, 금융, 공공에 최적화된 AutoML 템플릿 제공</p>
+							</div>
+							<div class="solid_item">
+								<h3>고객 맞춤형 UI/UX 제공</h3>
+								<p>전처리검증~배포까지 올인원 제공</p>
+							</div>
+							<div class="solid_item">
+								<h3>AI·IoT 연계 기술력</h3>
+								<p>SHAP, LIME 등으로 AI 결과 설명력 확보</p>
+							</div>
+							<div class="solid_item">
+								<h3>WebRTC 전문 인력 보유</h3>
+								<p>API, 클라우드, 엣지 디바이스까지 다양한 연동 지원</p>
+							</div>
+							<div class="solid_item">
+								<h3>내부 보안 설계</h3>
+								<p>기업 내부망에서도 독립 구축 가능한 패키지형 제공</p>
 							</div>
 						</div>
 					</div>
@@ -336,6 +364,26 @@
 		  $(window).on('resize', function() {
 		    syncFixedSectionHeight();
 		  });
+
+		  //기능설명 제이쿼리--start
+		  $('.object_item').each(function() {
+	        const $objectItem = $(this);
+
+	        // 초기에 해당 .object_item 안의 text_area 설정
+	        $objectItem.find('.center_circle .text_area').hide().eq(0).show();
+
+	        // 이 .object_item 안의 .circle에만 이벤트 바인딩
+	        $objectItem.find('.circle').click(function() {
+	            const $clicked = $(this);
+	            const index = $objectItem.find('.circle').index(this);
+
+	            $objectItem.find('.circle').removeClass('active');
+	            $clicked.addClass('active');
+
+	            $objectItem.find('.center_circle .text_area').hide().eq(index).show();
+	        });
+    	  });
+	      //기능설명 제이쿼리--end
 		});
 	</script>
 </body>

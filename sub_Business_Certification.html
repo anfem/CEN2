@@ -221,6 +221,22 @@
 								<h3>기능 설명</h3>
 								<p>군인, 학생 등 특수 사용자<br> 대상 단말 기반 인증</p>
 							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>QR, PUSH,<br>일회용코드(OTP) 기반<br>모바일 인증</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>국방망, 학교망 등 API<br>기반 신원 확인</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>비계정 기반 인증 방식으로<br>보안성과 접근성 동시 확보</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>비정상 로그인 패턴<br>탐지 및 인증 단계 제어</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -347,6 +363,29 @@
 		  $(window).on('resize', function() {
 		    syncFixedSectionHeight();
 		  });
+
+
+		  //기능설명 제이쿼리--start
+		  $('.circle').click(function() {
+	        // 클릭된 .circle 요소의 인덱스를 구함
+	        const index = $('.circle').index(this);
+
+	        // 모든 circle에서 active 클래스 제거
+	        $('.circle').removeClass('active');
+
+	        // 클릭된 circle에 active 클래스 추가
+	        $(this).addClass('active');
+
+	        // 모든 text_area 숨기기
+	        $('.center_circle .text_area').hide();
+
+	        // 인덱스에 맞는 text_area 보이기
+	        $('.center_circle .text_area').eq(index).show();
+	      });
+
+	      // 초기에는 첫 번째 .text_area만 보이도록 설정
+	      $('.center_circle .text_area').hide().eq(0).show();
+	      //기능설명 제이쿼리--end
 		});
 	</script>
 </body>

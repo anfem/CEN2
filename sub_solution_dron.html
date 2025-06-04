@@ -13,42 +13,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-
-		    let $main = $('.main_slider');
-		    let $thumb = $('.thumb_slider');
-
-			$('.slice_area_01').slick({
-      			adaptiveHeight: true,
-			    slidesToShow: 1,
-			    arrows: false,
-			    autoplay: true,
-   				infinite: true,
-   				asNavFor: '.slice_area_02 , text_slider'
-			});
-
-			$('.slice_area_02').slick({
-   				asNavFor: '.slice_area_01 , text_slider',
-			    slidesToShow: 3,
-			    slidesToScroll: 1,
-			    dots: false,
-  				arrows: false,
-			    centerMode: false,
-			    focusOnSelect: true
-			});
-
-			$('.thumb_slider .sd_item').first().remove();
-
-			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		      $('.text_area .text_box').removeClass('active');
-		      $('.text_area .text_box').eq(nextSlide).addClass('active');
-		    });
-
-		    $('.text_area .text_box').eq(0).addClass('active');
-		});
-	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -220,6 +184,22 @@
 							<div class="text_area">
 								<h3>기능 설명</h3>
 								<p>비행 시간, 위치, 조종자<br>정보, 비행 목적 등을<br>블록 단위로 저장</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>사전 등록된 기체/사용자에<br>대해 블록체인 기반<br>신원 인증</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>실시간 경로 및 위치<br>데이터의 변조 여부<br>자동 검증</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>비행 승인, 경로 진입,<br> 임무완료등 자동 트리거<br>생성 및 기록</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>교통안전공단, 지자체, 항공청<br> 시스템과 상호 연동 지원</p>
 							</div>
 						</div>
 					</div>
@@ -408,6 +388,29 @@
 		  $(window).on('resize', function() {
 		    syncFixedSectionHeight();
 		  });
+
+
+		  //기능설명 제이쿼리--start
+		  $('.circle').click(function() {
+	        // 클릭된 .circle 요소의 인덱스를 구함
+	        const index = $('.circle').index(this);
+
+	        // 모든 circle에서 active 클래스 제거
+	        $('.circle').removeClass('active');
+
+	        // 클릭된 circle에 active 클래스 추가
+	        $(this).addClass('active');
+
+	        // 모든 text_area 숨기기
+	        $('.center_circle .text_area').hide();
+
+	        // 인덱스에 맞는 text_area 보이기
+	        $('.center_circle .text_area').eq(index).show();
+	      });
+
+	      // 초기에는 첫 번째 .text_area만 보이도록 설정
+	      $('.center_circle .text_area').hide().eq(0).show();
+	      //기능설명 제이쿼리--end
 		});
 	</script>
 </body>

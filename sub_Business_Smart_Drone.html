@@ -221,6 +221,22 @@
 								<h3>기능 설명</h3>
 								<p>IoT·CCTV 기반 도로<br> 이상 상황 실시간 탐지,<br> AI 교통 분석</p>
 							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>교량·터널·전력구 등 고위험<br> 구조물 촬영 및 3D 매핑</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>교통정보, 신호제어, 재난<br> 대응 등 통합관제</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>교통사고·포트홀·침수·노면<br>결빙 예측모델 적용</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>지도 기반 도로 이상 상황<br>및 점검 데이터 시각화</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -346,6 +362,29 @@
 		  $(window).on('resize', function() {
 		    syncFixedSectionHeight();
 		  });
+
+
+		  //기능설명 제이쿼리--start
+		  $('.circle').click(function() {
+	        // 클릭된 .circle 요소의 인덱스를 구함
+	        const index = $('.circle').index(this);
+
+	        // 모든 circle에서 active 클래스 제거
+	        $('.circle').removeClass('active');
+
+	        // 클릭된 circle에 active 클래스 추가
+	        $(this).addClass('active');
+
+	        // 모든 text_area 숨기기
+	        $('.center_circle .text_area').hide();
+
+	        // 인덱스에 맞는 text_area 보이기
+	        $('.center_circle .text_area').eq(index).show();
+	      });
+
+	      // 초기에는 첫 번째 .text_area만 보이도록 설정
+	      $('.center_circle .text_area').hide().eq(0).show();
+	      //기능설명 제이쿼리--end
 		});
 	</script>
 </body>

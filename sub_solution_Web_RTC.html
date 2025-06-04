@@ -13,42 +13,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-
-		    let $main = $('.main_slider');
-		    let $thumb = $('.thumb_slider');
-
-			$('.slice_area_01').slick({
-      			adaptiveHeight: true,
-			    slidesToShow: 1,
-			    arrows: false,
-			    autoplay: true,
-   				infinite: true,
-   				asNavFor: '.slice_area_02 , text_slider'
-			});
-
-			$('.slice_area_02').slick({
-   				asNavFor: '.slice_area_01 , text_slider',
-			    slidesToShow: 3,
-			    slidesToScroll: 1,
-			    dots: false,
-  				arrows: false,
-			    centerMode: false,
-			    focusOnSelect: true
-			});
-
-			$('.thumb_slider .sd_item').first().remove();
-
-			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		      $('.text_area .text_box').removeClass('active');
-		      $('.text_area .text_box').eq(nextSlide).addClass('active');
-		    });
-
-		    $('.text_area .text_box').eq(0).addClass('active');
-		});
-	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -222,6 +186,26 @@
 								<h3>기능 설명</h3>
 								<p>설치 없이 브라우저<br>기반으로 실시간 연결</p>
 							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>IoT, CCTV, 산업기기<br> 원격 제어 지원</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>고객지원, 협업, 교육용<br>화상회의 기능 내장</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>모바일·태블릿·PC·안드로이드<br> 박스 지원</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>영상 스트림에 AI<br>객체인식·이상탐지 연동 가능</p>
+							</div>
+							<div class="text_area">
+								<h3>기능 설명</h3>
+								<p>TLS, DTLS, E2EE<br>기반 암호화 프로토콜 적용</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -394,6 +378,29 @@
 		  $(window).on('resize', function() {
 		    syncFixedSectionHeight();
 		  });
+
+
+		  //기능설명 제이쿼리--start
+		  $('.circle').click(function() {
+	        // 클릭된 .circle 요소의 인덱스를 구함
+	        const index = $('.circle').index(this);
+
+	        // 모든 circle에서 active 클래스 제거
+	        $('.circle').removeClass('active');
+
+	        // 클릭된 circle에 active 클래스 추가
+	        $(this).addClass('active');
+
+	        // 모든 text_area 숨기기
+	        $('.center_circle .text_area').hide();
+
+	        // 인덱스에 맞는 text_area 보이기
+	        $('.center_circle .text_area').eq(index).show();
+	      });
+
+	      // 초기에는 첫 번째 .text_area만 보이도록 설정
+	      $('.center_circle .text_area').hide().eq(0).show();
+	      //기능설명 제이쿼리--end
 		});
 	</script>
 </body>
