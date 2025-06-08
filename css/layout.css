@@ -335,7 +335,9 @@ footer p span {font-size:14px;}
 .art3 {height: 310px !important; border-radius: 0 !important; background: url("../images/speed.png"); background-size:cover; background-position:center; background-repeat: no-repeat;}
 .art3 > h3 {color:#fff;}
 .art3 > p {color:#fff;}
-.art4 {height: 300px !important; border-radius: 0 !important; background:#fff; border:1px solid #d9d9d9;}
+.art4 {height: 300px !important; border-radius: 0 !important; background: url("../images/big_date.jpg"); background-size:cover; background-position:center; background-repeat: no-repeat;}
+.art4 > h3 {color:#fff;}
+.art4 > p {color:#fff;}
 .art5 {height: 176px !important; border-radius: 0 !important; background: linear-gradient(to right, #6620FF, #582EB1);}
 .art5 > h3 {color:#fff;}
 .art5 > p {color:#fff;}
