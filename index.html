@@ -13,6 +13,41 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+		    let $main = $('.main_slider');
+		    let $thumb = $('.thumb_slider');
+
+			$('.slice_area_01').slick({
+      			adaptiveHeight: true,
+			    slidesToShow: 1,
+			    arrows: false,
+			    autoplay: true,
+   				infinite: true,
+   				asNavFor: '.slice_area_02 , text_slider'
+			});
+
+			$('.slice_area_02').slick({
+   				asNavFor: '.slice_area_01 , text_slider',
+			    slidesToShow: 3,
+			    slidesToScroll: 1,
+			    dots: false,
+  				arrows: false,
+			    centerMode: false,
+			    focusOnSelect: true
+			});
+
+			$('.thumb_slider .sd_item').first().remove();
+
+			  $main.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		      $('.text_area .text_box').removeClass('active');
+		      $('.text_area .text_box').eq(nextSlide).addClass('active');
+		    });
+
+		    $('.text_area .text_box').eq(0).addClass('active');
+		});
+	</script>
 </head>
 <body>
 	<div id="wrap">
@@ -170,28 +205,28 @@
 							<h3>BIG DATA</h3>
 							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
 							<div class="button">
-								<a href="#"><span>MORE</span></a>
+								<a href="./sub_Business_bigdata.html"><span>MORE</span></a>
 							</div>
 						</div>
 						<div class="text_box text_2">
 							<h3>IoT 통합관제</h3>
 							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
 							<div class="button">
-								<a href="#"><span>MORE</span></a>
+								<a href="./sub_Business_IoT.html"><span>MORE</span></a>
 							</div>
 						</div>
 						<div class="text_box text_3">
 							<h3>AI 머신러닝</h3>
 							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
 							<div class="button">
-								<a href="#"><span>MORE</span></a>
+								<a href="./sub_solution_AutoML_c.html"><span>MORE</span></a>
 							</div>
 						</div>
 						<div class="text_box text_4">
 							<h3>ITS 구축</h3>
 							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
 							<div class="button">
-								<a href="#"><span>MORE</span></a>
+								<a href="./sub_Business_Smart_Drone.html"><span>MORE</span></a>
 							</div>
 						</div>
 					</div>
