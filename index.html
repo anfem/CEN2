@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/layout.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function(){
@@ -58,12 +59,14 @@
 					<div class="mobile_logo">
 						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
 					</div>
-					<div class="close_btn">X</div>
+					<div class="close_btn"><img src="./images/close_btn.svg" alt=""></div>
 				</div>
 				<div class="m_menu_contents">
 					<ul>
 						<li>
-							<div class="m_menu_title"><span>회사소개</span><span>↓</span></div>
+							<div class="m_menu_title">
+								<span>회사소개</span>
+								<img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
 								<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
 								<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
@@ -72,7 +75,7 @@
 							</ul>
 						</li>
 						<li>
-							<div class="m_menu_title"><span>사업분야</span><span>↓</span></div>
+							<div class="m_menu_title"><span>사업분야</span><img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
 								<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
 								<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
@@ -83,7 +86,7 @@
 							</ul>
 						</li>
 						<li>
-							<div class="m_menu_title"><span>솔루션</span><span>↓</span></div>		
+							<div class="m_menu_title"><span>솔루션</span><img src="./images/down_arrow.svg" alt=""></div>		
 							<ul>
 								<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
 								<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
@@ -93,7 +96,7 @@
 							</ul>
 						</li>
 						<li>
-							<div class="m_menu_title"><span>연구개발</span><span>↓</span></div>
+							<div class="m_menu_title"><span>연구개발</span><img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
 								<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
 								<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
@@ -101,7 +104,7 @@
 							</ul>
 						</li>
 						<li>
-							<div class="m_menu_title"><span>홍보센터</span><span>↓</span></div>
+							<div class="m_menu_title"><span>홍보센터</span><img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
 								<li><a href="./promotion_Certification.html">인증현황</a></li>
 								<li><a href="./promotion_person.html">인재채용</a></li>
@@ -133,8 +136,13 @@
 					</ul>
 				</div>
 				<div class="right_box">
-					<div class="transrate"></div>
-					<div class="mobile_menu">메뉴</div>
+					<a href="#" class="transrate">
+						<img src="./images/earth_ico.svg" alt="">
+						<span>EN</span>
+					</a>
+					<div class="mobile_menu">
+						<img src="./images/menu_icon.svg" alt="">
+					</div>
 				</div>
 			</div>
 			<div class="sub_menu">
@@ -361,7 +369,6 @@
 						<a href="https://www.markany.com/"><img src="./images/partner/markany.png" alt=""></a>
 						<a href="https://www.ssrinc.co.kr/"><img src="./images/partner/ssr.svg" alt=""></a>
 						<a href="https://www.sinest.co.kr/"><img src="./images/partner/shinest.svg" alt=""></a>
-						<a href="#">(주)어썸브릭스</a>
 						<a href="https://www.saerom.co.kr/homev6/index.html"><img src="./images/partner/searom.png" alt=""></a>
 						<a href="https://edentns.com/"><img src="./images/partner/edenTns.png" alt=""></a>
 						<a href="https://tjy.co.kr/"><img src="./images/partner/theJy.png" alt=""></a>
