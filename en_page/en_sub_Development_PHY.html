@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CEN코퍼레이션</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 모바일 메뉴 -->
+		<div id="mobile_menu_bg">
+			<div class="mobile_menu_wrap">
+				<div class="menu_top">
+					<div class="mobile_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</div>
+					<div class="close_btn"><img src="./images/close_btn.svg" alt=""></div>
+				</div>
+				<div class="m_menu_contents">
+					<ul>
+						<li>
+							<div class="m_menu_title">
+								<span>회사소개</span>
+								<img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
+								<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
+								<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
+								<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>사업분야</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+								<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
+								<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
+								<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
+								<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
+								<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>솔루션</span><img src="./images/down_arrow.svg" alt=""></div>		
+							<ul>
+								<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+								<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+								<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+								<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+								<li><a href="./sub_solution_dron.html">드론관제</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>연구개발</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
+								<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
+								<li><a href="./sub_Development_PHY.html">초고속 위성통신 PHY 통합 응용 플랫폼</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>홍보센터</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./promotion_Certification.html">인증현황</a></li>
+								<li><a href="./promotion_person.html">인재채용</a></li>
+							</ul>	
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!------글로벌 네비------->
+		<header id="gnb">
+			<div class="gnb_wrap">
+				<div id="logo">
+					<a href="./index.html" class="def_logo">
+						<img src="./images/logo_w.svg" alt="CEN코퍼레이션 화이트">
+					</a>
+					<a href="./index.html" class="tra_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</a>
+				</div>
+				<div class="nb_wrap">
+					<ul>
+						<li><a href="./sub_about_us.html">회사소개</a></li>
+						<li><a href="./sub_Business_IoT.html">사업분야</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
+						<li><a href="./sub_Development_Construction">연구개발</a></li>
+						<li><a href="./promotion_Certification.html">홍보센터</a></li>
+					</ul>
+				</div>
+				<div class="right_box">
+					<a href="#" class="transrate">
+						<img src="./images/earth_ico.svg" alt="">
+						<span>EN</span>
+					</a>
+					<div class="mobile_menu">
+						<img src="./images/menu_icon.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="sub_menu">
+				<!--ABOUT US-->
+				<ul>
+					<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+				</ul>
+				<!--사업분야-->
+				<ul>
+					<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+					<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
+					<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
+					<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
+					<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
+					<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
+				</ul>
+				<!--솔루션-->
+				<ul>
+					<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+					<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+					<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+					<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+					<li><a href="./sub_solution_dron.html">드론관제</a></li>
+				</ul>
+				<!--연구개발-->
+				<ul>
+					<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
+					<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
+					<li><a href="./sub_Development_PHY.html">초고속 위성통신 PHY 통합 응용 플랫폼</a></li>
+				</ul>
+				<!--홍보센터-->
+				<ul>
+					<li><a href="./promotion_Certification.html">인증현황</a></li>
+					<li><a href="./promotion_person.html">인재채용</a></li>
+				</ul>
+			</div>
+		</header>
+		<!------글로벌 네비END------->
+
+		<div class="SubBg">
+			<div class="text_area">
+				<h1>DEVELOPMENT</h1>
+			</div>
+
+			<div class="section_indicator">
+				<a href="./sub_Development_Construction.html"><span>건설기계 전동화 과제</span></a>
+				<a href="./sub_Development_Safety.html"><span>비가청 기술 안전 솔루션</span></a>
+				<a href="./sub_Development_PHY.html" class="active"><span>초고속 위성통신 PHY<br>통합 응용 플랫폼</span></a>
+			</div>
+		</div>
+
+		<div class="fixed_scroll_center">
+			<div class="fixed_section">
+				<div class="fixed_wrap">
+					<div class="title">
+						<h3>초고속 위성통신 PHY 통합 응용 플랫폼</h3>
+					</div>
+					<h4>우주환경에서도 끊김 없는 실시간 통신, 통합 하드웨어-소프트웨어 플랫폼</h4>
+					<p>씨이엔코퍼레이션은 LEO 위성 통신환경에서의 실시간 PHY 계층 신호처리를 위해 FPGA 기반 하드웨어와 RTOS 기반 소프트웨어, 실시간 검증 도구를 통합한“초고속 위성통신 PHY 통합 응용 플랫폼”을 개발 중입니다.<br> 이 플랫폼은 국방·우주 분야의 고신뢰 통신을 위한 자동화 검증 기능과 복합 환경 대응 능력을 갖춘 시스템으로, 고속 파형 처리, RF 모듈 통합, 그리고 AI 기반 튜닝 알고리즘까지 포함한 차세대 위성통신 핵심 기반 기술입니다.</p>
+					<h4 class="comment">"끊김 없는 통신, 전장과 우주를 연결하는 통합 검증 플랫폼"</h4>
+				</div>
+			</div>
+
+			<div class="scroll_section">
+				<!-- <div class="list_wrap marg">
+					<div class="info_title">
+						<h4><span>Introduction Effect</span><br>도입 효과</h4>
+					</div>
+					<div class="list_items"><div class="squar"></div><p>중대산업재해 사전 예방</p></div>
+					<div class="list_items"><div class="squar"></div><p>작업자 안전지대 확보 및 경각심 고취</p></div>
+					<div class="list_items"><div class="squar"></div><p>실시간 위치 기반 이력 관리 가능</p></div>
+				</div> -->
+				<div class="scroll_item">
+					<div class="info_title">
+						<h4><span>Hardware Architecture</span><br>하드웨어 기반 구성 요소</h4>
+					</div>
+					<div class="object_item2">
+						<h4 class="sub_title">PET용 지오펜스 솔루션</h4>
+						<p class="title_info">비가청 신호를 활용해 반려동물의 지정 구역 이탈을 감지하고, 음성, 진동, 자동 경고음 등을 통해 이탈을 방지하는 솔루션입니다.</p>
+						<div class="dash_wrap">
+							<div class="solid_item">
+								<h3>FPGA <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Field Programmable Gate Array</span></h3>
+								<p>실시간 PHY 계층 통신 처리 / 파형 생성 및 변조·복조 / SDR 구성의 핵심 연산기</p>
+							</div>
+							<div class="solid_item">
+								<h3>DAC <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Digital to Analog Converter</span></h3>
+								<p>디지털 파형을 아날로그 RF 신호로 변환 / 고속 송신 성능 확보</p>
+							</div>
+							<div class="solid_item">
+								<h3>ADC <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Analog to Digital Converter</span></h3>
+								<p>수신된 RF 신호를 고정밀 디지털 데이터로 변환 / 잡음 최소화 설계</p>
+							</div>
+							<div class="solid_item">
+								<h3>DDR4 Memory</h3>
+								<p>대용량 데이터 버퍼링 및 실시간 처리 지원 / 멀티채널 링크 유지용</p>
+							</div>
+							<div class="solid_item">
+								<h3>Clock Management</h3>
+								<p>PLL, 클럭 디스트리뷰션 회로를 통한 안정적 샘플링 속도 제어</p>
+							</div>
+							<div class="solid_item">
+								<h3>Power Management</h3>
+								<p>우주환경 대응 전력 최적화 / SoC·RF칩·메모리 전원 동시 관리</p>
+							</div>
+							<div class="solid_item">
+								<h3>TRM <br><span style="font-size:12px; color:#999; line-height:12px; display:block;">Transmit Receive Module</span></h3>
+								<p>저잡음 증폭기(LNA), 전력증폭기(PA), 다채널 빔포머 포함한 RF 전방단 회로군</p>
+							</div>
+						</div>
+
+						<h4 class="sub_title">소프트웨어 및 검증 도구</h4>
+						<p class="title_info">통신 스택, 시뮬레이션 환경, 실시간 검증 도구까지 통합된 소프트웨어 설계</p>
+						<div class="dash_wrap">
+							<div class="solid_item">
+								<h3>RTOS 적합성 분석</h3>
+								<p>우주·국방 환경에서의 실시간 운영체제 성능 분석 / 시간결정성 및 메모리 안전성 검증</p>
+							</div>
+							<div class="solid_item">
+								<h3>무선통신<br>Application Layer</h3>
+								<p>PHY 위에 위치한 데이터 처리 및 프로토콜 제어 모듈 / 신호 손실 대응 로직 내장</p>
+							</div>
+							<div class="solid_item">
+								<h3>시험 검증용 SW / GUI</h3>
+								<p>BER, SNR, BLER 등 지표 분석 / 개발자용 디버깅 콘솔 및 시각화 도구 제공</p>
+							</div>
+							<div class="solid_item">
+								<h3>복합 안정성 요구 대응</h3>
+								<p>RF 간섭, 신호 세기 저하, 환경 변화에 따른 자동 재설정 / 하드웨어-소프트웨어 연계 복구 절차 내장</p>
+							</div>
+						</div>
+
+						<h4 class="sub_title">적용 시나리오</h4>
+						<div class="dash_wrap">
+							<div class="solid_item">
+								<h3>LEO 위성 모뎀 검증</h3>
+								<P>도플러/지연/채널 변화 등 복합 변수 대응 PHY 설계 검증</P>
+							</div>
+							<div class="solid_item">
+								<h3>국방 위성통신 SDR 설계</h3>
+								<P>전력증폭기/빔포머 연계 무선부 테스트 가능</P>
+							</div>
+							<div class="solid_item">
+								<h3>우주기반 통신 실증 플랫폼</h3>
+								<p>FPGA 기반 파형 처리, RF 모듈 통합 테스트 베드 제공</p>
+							</div>
+							<div class="solid_item">
+								<h3>AI 기반 튜닝 알고리즘 학습</h3>
+								<p>PHY 성능 데이터를 AI 최적화 모델로 전달 가능</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="inquiry_section">
+			<div class="text_box">
+				<h3>도입 및 기술문의</h3>
+				<div class="ico_t">
+					<img src="./images/ion_call-sharp_w.svg" alt=""><p>031-8067-8633</p>
+				</div>
+				<div class="ico_t">
+					<img src="./images/e_mail_w.svg" alt=""><p>son070@cen-corp.co.kr</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer_wrap">
+				<div class="left_cotents footer_item">
+					<div class="logo">
+						<img src="./images/logo_w.svg" alt="">
+					</div>
+					<span>© 2025 CEN Corporation Inc. All rights reserved.</span>
+					<div class="adress">
+						<h3>Address</h3>
+						<p>경기도 용인시 기흥구 기흥로 58 기흥 ICT밸리 SKV1 B동 1105, 1106호</p>
+					</div>
+				</div>
+				<div class="medle_cotents footer_item">
+					<h3>CEN Corporation</h3>
+					<ul>
+						<li><a href="./sub_about_us.html">ABOUT US</a></li>
+						<li><a href="./sub_Business_IoT.html">BUSINESS</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">SOLUTION</a></li>
+						<li><a href="./sub_Development_Construction.html">DEVELOPMENT</a></li>
+					</ul>
+				</div>
+				<div class="right_cotents footer_item">
+					<div class="call">
+						<h3>Call</h3>
+						<p><span>Tel</span> +82(0)31-8067-8633</p>
+						<p><span>Fax</span> +82(0)31-8067-8634</p>
+					</div>
+					<div class="email">
+						<h3>Email</h3>
+						<p>nam3305@cen-corp.co.kr</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+		  function syncFixedSectionHeight() {
+		    const windowWidth = $(window).width();
+
+		    if (windowWidth >= 1024) {
+		      const $parent = $('.fixed_scroll_center');
+		      const $fixedSection = $('.fixed_section');
+
+		      const parentHeight = $parent.outerHeight();
+		      $fixedSection.height(parentHeight);
+		    } else {
+		      // 1024px 미만일 경우, height 속성 제거 (CSS 제어 허용)
+		      $('.fixed_section').css('height', '');
+		    }
+		  }
+
+		  // 최초 로딩 시 실행
+		  syncFixedSectionHeight();
+
+		  // 윈도우 크기 변경 시에도 다시 실행
+		  $(window).on('resize', function() {
+		    syncFixedSectionHeight();
+		  });
+		});
+	</script>
+</body>

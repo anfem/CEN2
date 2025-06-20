@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CEN코퍼레이션</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		function initCertSlider() {
+		  const windowWidth = $(window).width();
+
+		  if (windowWidth <= 640 && !$('.cert_slide_area').hasClass('slick-initialized')) {
+		    $('.cert_slide_area').show().slick({
+		      slidesToShow: 1,
+		      slidesToScroll: 1,
+		      arrows: true,
+		      prevArrow: '<button type="button" class="slick-prev"><img src="./images/left_arrow.svg" alt="Prev"></button>',
+		      nextArrow: '<button type="button" class="slick-next"><img src="./images/right_arrow.svg" alt="Next"></button>',
+		      dots: false,
+		      autoplay: true,
+		      autoplaySpeed: 3000
+		    });
+		  }
+		}
+
+		$(window).on('load', function() {
+		  initCertSlider(); // 최초 실행
+		});
+
+		$(window).resize(function() {
+		  const windowWidth = $(window).width();
+
+		  if (windowWidth > 640 && $('.cert_slide_area').hasClass('slick-initialized')) {
+		    $('.cert_slide_area').slick('unslick').hide();
+		  } else if (windowWidth <= 640 && !$('.cert_slide_area').hasClass('slick-initialized')) {
+		    initCertSlider();
+		  }
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 모바일 메뉴 -->
+		<div id="mobile_menu_bg">
+			<div class="mobile_menu_wrap">
+				<div class="menu_top">
+					<div class="mobile_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</div>
+					<div class="close_btn"><img src="./images/close_btn.svg" alt=""></div>
+				</div>
+				<div class="m_menu_contents">
+					<ul>
+						<li>
+							<div class="m_menu_title">
+								<span>회사소개</span>
+								<img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
+								<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
+								<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
+								<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>사업분야</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+								<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
+								<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
+								<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
+								<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
+								<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>솔루션</span><img src="./images/down_arrow.svg" alt=""></div>		
+							<ul>
+								<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+								<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+								<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+								<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+								<li><a href="./sub_solution_dron.html">드론관제</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>연구개발</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
+								<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
+								<li><a href="./sub_Development_PHY.html">초고속 위성통신 PHY 통합 응용 플랫폼</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>홍보센터</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./promotion_Certification.html">인증현황</a></li>
+								<li><a href="./promotion_person.html">인재채용</a></li>
+							</ul>	
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!------글로벌 네비------->
+		<header id="gnb">
+			<div class="gnb_wrap">
+				<div id="logo">
+					<a href="./index.html" class="def_logo">
+						<img src="./images/logo_w.svg" alt="CEN코퍼레이션 화이트">
+					</a>
+					<a href="./index.html" class="tra_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</a>
+				</div>
+				<div class="nb_wrap">
+					<ul>
+						<li><a href="./sub_about_us.html">회사소개</a></li>
+						<li><a href="./sub_Business_IoT.html">사업분야</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
+						<li><a href="./sub_Development_Construction">연구개발</a></li>
+						<li><a href="./promotion_Certification.html">홍보센터</a></li>
+					</ul>
+				</div>
+				<div class="right_box">
+					<a href="#" class="transrate">
+						<img src="./images/earth_ico.svg" alt="">
+						<span>EN</span>
+					</a>
+					<div class="mobile_menu">
+						<img src="./images/menu_icon.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="sub_menu">
+				<!--ABOUT US-->
+				<ul>
+					<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
+					<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+				</ul>
+				<!--사업분야-->
+				<ul>
+					<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+					<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
+					<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
+					<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
+					<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
+					<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
+				</ul>
+				<!--솔루션-->
+				<ul>
+					<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+					<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+					<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+					<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+					<li><a href="./sub_solution_dron.html">드론관제</a></li>
+				</ul>
+				<!--연구개발-->
+				<ul>
+					<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
+					<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
+					<li><a href="./sub_Development_PHY.html">초고속 위성통신 PHY 통합 응용 플랫폼</a></li>
+				</ul>
+				<!--홍보센터-->
+				<ul>
+					<li><a href="./promotion_Certification.html">인증현황</a></li>
+					<li><a href="./promotion_person.html">인재채용</a></li>
+				</ul>
+			</div>
+		</header>
+		<!------글로벌 네비END------->
+
+	<div class="SubBg">
+		<div class="text_area">
+			<h1>COMMUNUTY</h1>
+		</div>
+		<div class="section_indicator">
+			<a href="./promotion_Certification.html" class="active"><span>인증현황</span></a>
+			<a href="./promotion_person.html"><span>인재채용</span></a>
+		</div>
+	</div>
+
+	<div class="cert_infor_text">
+		<h1>Certification<br>Status</h1>
+		<h3>CEN의 기술력과 신뢰성,<br class="mobile_line">공인된 성과로 증명합니다.</h3>
+		<p>씨이엔코퍼레이션은 기술 경쟁력, 정보보안 체계, 품질경영 능력<br class="mobile_line"> 등<br> 다양한 분야에서 정부 및 공인기관으로부터의 인증을 획득하며<br class="mobile_line"><br>고객에게 신뢰받는 파트너로 자리매김하고 있습니다.</p>
+	</div>
+
+
+	<div class="cert_wrap">
+		<h3 class="cert_title"><span>Certificate</span><br>인증서</h3>
+		<div class="cert_img">
+			<img src="./images/cert_1.png" alt="">
+			<img src="./images/cert_2.png" alt="">
+			<img src="./images/cert_3.png" alt="">
+			<img src="./images/cert_4.png" alt="">
+			<img src="./images/cert_5.png" alt="">
+			<img src="./images/cert_6.png" alt="">
+		</div>
+		<div class="cert_slide_area">
+			<div class="cert_items">
+				<div class="cert_items_wrap">
+					<img src="./images/cert_1.png" alt="">
+					<img src="./images/cert_2.png" alt="">
+				</div>
+			</div>
+			<div class="cert_items">
+				<div class="cert_items_wrap">
+					<img src="./images/cert_3.png" alt="">
+					<img src="./images/cert_4.png" alt="">
+				</div>
+			</div>
+			<div class="cert_items">
+				<div class="cert_items_wrap">
+					<img src="./images/cert_5.png" alt="">
+					<img src="./images/cert_6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cert_infor_text">
+		<h1>Patent Certificate<br>Status</h1>
+		<h3>기술 경쟁력의 핵심,<br class="mobile_line"> CEN의 지식재산권</h3>
+		<p>씨이엔코퍼레이션은<br class="mobile_line"> 스마트시티, 자율주행 건설기계, AI 분석, IoT, 무선통신, 비가청 안전기술 등<br class="mobile_line"><br>다양한 영역에서 독자적인 기술을 기반으로 지속적인<br class="mobile_line"> 특허 출원 및 등록을 진행하고 있으며,<br>이러한 지식재산권은 R&D 중심<br class="mobile_line"> 기업으로서의 역량과 미래가치를 증명합니다.<br><br><br class="mobile_line"><br class="mobile_line">“CEN의 기술은 단순한 구현이 아닌, 보호받는 자산입니다.”</p>
+	</div>
+
+	<div class="cert_wrap">
+		<h3 class="cert_title"><span>Patent Certificate</span><br>특허증</h3>
+		<div class="cert_img">
+			<img src="./images/Patent_1.png" alt="">
+			<img src="./images/Patent_2.png" alt="">
+			<img src="./images/Patent_3.png" alt="">
+			<img src="./images/Patent_4.png" alt="">
+		</div>
+		<div class="cert_slide_area">
+			<div class="cert_items">
+				<div class="cert_items_wrap">
+					<img src="./images/Patent_1.png" alt="">
+					<img src="./images/Patent_2.png" alt="">
+				</div>
+			</div>
+			<div class="cert_items">
+				<div class="cert_items_wrap">
+					<img src="./images/Patent_3.png" alt="">
+					<img src="./images/Patent_4.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+			<div class="footer_wrap">
+				<div class="left_cotents footer_item">
+					<div class="logo">
+						<img src="./images/logo_w.svg" alt="">
+					</div>
+					<span>© 2025 CEN Corporation Inc. All rights reserved.</span>
+					<div class="adress">
+						<h3>Address</h3>
+						<p>경기도 용인시 기흥구 기흥로 58 기흥 ICT밸리 SKV1 B동 1105, 1106호</p>
+					</div>
+				</div>
+				<div class="medle_cotents footer_item">
+					<h3>CEN Corporation</h3>
+					<ul>
+						<li><a href="./sub_about_us.html">ABOUT US</a></li>
+						<li><a href="./sub_Business_IoT.html">BUSINESS</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">SOLUTION</a></li>
+						<li><a href="./sub_Development_Construction.html">DEVELOPMENT</a></li>
+					</ul>
+				</div>
+				<div class="right_cotents footer_item">
+					<div class="call">
+						<h3>Call</h3>
+						<p><span>Tel</span> +82(0)31-8067-8633</p>
+						<p><span>Fax</span> +82(0)31-8067-8634</p>
+					</div>
+					<div class="email">
+						<h3>Email</h3>
+						<p>nam3305@cen-corp.co.kr</p>
+					</div>
+				</div>
+			</div>
+	</footer>
+	</div>
+
+
+	<script src="js/main.js"></script>
+</body>
