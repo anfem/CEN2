@@ -791,10 +791,10 @@ footer p span {font-size:14px;}
   #section3 > .solution > .section3_title > .button > a {width:max-content; margin:20px 0 0; font-size:16px; border-radius:4px;}
   #section3 > .solution > .solution_img_wrap > .contents {width:49%; margin:0 0 16px;}
   #section3 > .solution > .solution_img_wrap > .contents > a > span {font-size:20px;}
-  #section3 > .solution > .solution_img_wrap > .contents {height:200px;}
+  #section3 > .solution > .solution_img_wrap > .contents {height:180px; border-radius: 8px; margin:0 0 8px;}
 
   #section5 > .press_release > .content_wrap {flex-direction: column; height:332px;}
-  #section5 > .press_release > .content_wrap > .img_area {width:100%; height:160px; display:flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between; align-items: flex-end;}
+  #section5 > .press_release > .content_wrap > .img_area {width:100%; height:160px; border-radius:8px; display:flex; flex-direction: column; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; align-content: space-between;}
   #section5 > .press_release > .content_wrap > .img_area > .img_wrap {width:31%; height:100%;}
   #section5 > .press_release > .content_wrap > .img_area > .text_area {width:66%;}
   #section5 > .press_release > .content_wrap > .img_area > .date_infor {width:50%; text-align: right;}
@@ -802,7 +802,7 @@ footer p span {font-size:14px;}
 
   #section6 > .news > .section6_title > h3 {font-size:32px}
   #section6 > .news > .section6_contents {flex-direction: column; gap:16px;}
-  #section6 > .news > .section6_contents > .news_item {height:auto; width:100%; padding:28px 24px;}
+  #section6 > .news > .section6_contents > .news_item {width:100%; height:116px; padding:20px 16px; border-radius: 8px; display:flex; flex-direction: column; justify-content: space-between;}
   #section6 > .news > .section6_contents > .news_item > h3 {font-size:18px;}
 
   .logo_contain {grid-template-columns: repeat(4, 1fr); gap: 10px;}
@@ -877,6 +877,7 @@ footer p span {font-size:14px;}
   .injea_wrap > .content_wrap > .box_img > .box_img_items {height:230px;}
 
   .injea_wrap > .content_wrap2 {justify-content: center; grid-template-columns: repeat(2, 220px); grid-template-rows: repeat(6, 220px); gap:12px;}
+
 }
 
 @media(max-width: 480px){

@@ -5,7 +5,7 @@
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin: 0; padding: 0;}
 html {-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);} /* 화면 꾹 누르면 메뉴 나타남, 사용자가 클릭 및 드래그 기능 이용함, 링크 클릭 시 밑줄/아웃라인 생김 기능들 방지 */
-body {min-width:320px; background: #fff; overflow-wrap: break-word; word-break: break-all; white-space: normal; -webkit-text-size-adjust:none; font-family: 'Montserrat', sans-serif;}
+body {min-width:320px; background: #fff; -webkit-text-size-adjust:none; font-family: 'Montserrat', sans-serif;}
 :lang(ko) {font-family: 'Noto Sans KR', sans-serif; /* 한글만 별도로 지정 */}
 
 fieldset,img {border: 0;}
