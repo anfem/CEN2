@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common-en.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
@@ -191,10 +193,7 @@
 				<h1>씨이엔코퍼레이션</h1>
 				<h3>이 만들어 가겠습니다.</h3>
 			</div>
-			<div class="bg-video">
-			  <video class="bg-video_content" autoplay muted playsinline loop preload="auto">
-			    <source src="video/main_video.mp4" type="video/mp4"/>
-			  </video>
+			<div class="bg-video" style="background:skyblue;">
 			</div>
 		</div>
 
@@ -202,44 +201,44 @@
 		<div id="section2">
 			<div class="slider_wrap">
 				<div class="slide1 main_slider">
-					<div class="slice_area_01">
+					<div class="slice_area_01" data-aos="fade-right" data-aos-duration="700">
 						<a href="./sub_Business_bigdata.html" class="sd_item iot1"><img src="./images/big_date.jpg" alt=""></a>
 						<a href="./sub_Business_IoT.html" class="sd_item iot2"><img src="./images/iot_img_2.jpg" alt=""></a>
 						<a href="./sub_solution_AutoML_c.html" class="sd_item iot3"><img src="./images/marchine_learning.jpg" alt=""></a>
 						<a href="./sub_Business_Smart_Drone.html" class="sd_item iot4"><img src="./images/ITS.jpg" alt=""></a>
 					</div>
-					<div class="text_area text_slider">
+					<div class="text_area text_slider" data-aos="fade-up" data-aos-duration="700">
 						<div class="text_box text_1">
 							<h3>BIG DATA</h3>
-							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
+							<p>드론 및 교통 정보의 빅데이터 분석을 통해 인사이트를 발굴하여 고도화된<br>데이터 분석과 시각화서비스 제공</p>
 							<div class="button">
 								<a href="./sub_Business_bigdata.html"><span>MORE</span></a>
 							</div>
 						</div>
 						<div class="text_box text_2">
 							<h3>IoT 통합관제</h3>
-							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
+							<p>드론, 교통, 시설, 방범, 안전을 포함한 도시, 집단 건물, 특정사이트 등에<br>대한 실시간 관제정보 제공과 제어를 포함한 시각적인 통합관제솔루션 제공.</p>
 							<div class="button">
 								<a href="./sub_Business_IoT.html"><span>MORE</span></a>
 							</div>
 						</div>
 						<div class="text_box text_3">
 							<h3>AI 머신러닝</h3>
-							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
+							<p>인공지능 학습 및 추론 자동화 방법과 AutoML 을 통해 편의성 높은<br>인공지능 학습 솔루션을 제공.</p>
 							<div class="button">
 								<a href="./sub_solution_AutoML_c.html"><span>MORE</span></a>
 							</div>
 						</div>
 						<div class="text_box text_4">
 							<h3>ITS 구축</h3>
-							<p>효율적인고 신속한 단지 관리를 위한 스마트산단 통합 정보제공 포털</p>
+							<p>국도 교통정보 빅데이터 분석시스템, 국도 원클릭 상황관리시스템,<br>민자도로 통합관리시스템 등 구축, 지자체 ITS 구축 등</p>
 							<div class="button">
 								<a href="./sub_Business_Smart_Drone.html"><span>MORE</span></a>
 							</div>
 						</div>
 					</div>
 
-					<div class="slice_area_02 thumb_slider">
+					<div class="slice_area_02 thumb_slider" data-aos="fade-left" data-aos-delay="700" data-aos-duration="700">
 						<div class="sd_item iot1"><img src="./images/big_date.jpg" alt=""></div>
 						<div class="sd_item iot2"><img src="./images/iot_img_2.jpg" alt=""></div>
 						<div class="sd_item iot3"><img src="./images/marchine_learning.jpg" alt=""></div>
@@ -262,19 +261,19 @@
 					</div>
 				</div>
 				<div class="solution_img_wrap">
-					<div class="contents ct_1">
+					<div class="contents ct_1" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
 						<a href="./sub_solution_CENPlus_c.html"><span>CENPlus<br>스마트 시티 플랫폼</span></a>
 					</div>
-					<div class="contents ct_2">
+					<div class="contents ct_2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
 						<a href="./sub_solution_Web_RTC.html"><span>Web RTC<br>실시간 통신</span></a>
 					</div>
-					<div class="contents ct_3">
+					<div class="contents ct_3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
 						<a href="./sub_solution_AutoML_c.html"><span>Auto ML</span></a>
 					</div>
-					<div class="contents ct_4">
+					<div class="contents ct_4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
 						<a href="./sub_solution_Edge_device_c.html"><span>Edge 디바이스<br>관제</span></a>
 					</div>
-					<div class="contents ct_5">
+					<div class="contents ct_5" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700">
 						<a href="./sub_solution_dron.html"><span>드론관제</span></a>
 					</div>
 				</div>
@@ -451,4 +450,7 @@
 	</div>
 
 	<script src="js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>

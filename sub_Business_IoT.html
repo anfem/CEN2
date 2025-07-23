@@ -42,9 +42,8 @@
 						<li>
 							<div class="m_menu_title"><span>사업분야</span><img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
-								<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+								<li><a href="./sub_Business_IoT.html">Dron & IoT종합관제</a></li>
 								<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
-								<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
 								<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
 								<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
 								<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
@@ -57,7 +56,6 @@
 								<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
 								<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
 								<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
-								<li><a href="./sub_solution_dron.html">드론관제</a></li>
 							</ul>
 						</li>
 						<li>
@@ -120,9 +118,8 @@
 				</ul>
 				<!--사업분야-->
 				<ul>
-					<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
+					<li><a href="./sub_Business_IoT.html">Dron & IoT종합관제</a></li>
 					<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
-					<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
 					<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
 					<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
 					<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
@@ -133,7 +130,6 @@
 					<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
 					<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
 					<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
-					<li><a href="./sub_solution_dron.html">드론관제</a></li>
 				</ul>
 				<!--연구개발-->
 				<ul>
@@ -156,9 +152,8 @@
 			</div>
 
 			<div class="section_indicator">
-				<a href="./sub_Business_IoT.html" class="active"><span>IoT 종합관제</span></a>
+				<a href="./sub_Business_IoT.html" class="active"><span>Dron & IoT종합관제</span></a>
 				<a href="./sub_Business_bigdata.html"><span>빅데이터</span></a>
-				<a href="./sub_Business_Smart_Drone.html"><span>Smart<br>Drone & Road</span></a>
 				<a href="./sub_Business_SI_SM.html"><span>공공기관 SI & SM</span></a>
 				<a href="./sub_Business_Certification.html"><span>인증솔루션</span></a>
 				<a href="./sub_Business_AI.html"><span>AI 교육사업부</span></a>
@@ -172,8 +167,6 @@
 						<h3>IoT 종합관제</h3>
 					</div>
 					<h4>스마트산단의 두뇌, IoT 종합관제 시스템</h4>
-					<p>씨이엔코퍼레이션의 블록체인 기반 드론 관제 시스템은 드론의 비행 정보, 경로, 인증 데이터를 **변조 불가능한 분산 원장(Distributed Ledger)**에 저장함으로써 보안성과 데이터 무결성을 극대화한 차세대 지능형 관제 플랫폼입니다.</p>
-					<h4 class="comment">"IoT 기술과 AI 기반 분석을 통해 산업단지의<br>안전, 에너지, 물류, 환경까지 통합 관리합니다."</h4>
 				</div>
 			</div>
 
@@ -284,29 +277,6 @@
 	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function() {
-		  function syncFixedSectionHeight() {
-		    const windowWidth = $(window).width();
-
-		    if (windowWidth >= 1024) {
-		      const $parent = $('.fixed_scroll_center');
-		      const $fixedSection = $('.fixed_section');
-
-		      const parentHeight = $parent.outerHeight();
-		      $fixedSection.height(parentHeight);
-		    } else {
-		      // 1024px 미만일 경우, height 속성 제거 (CSS 제어 허용)
-		      $('.fixed_section').css('height', '');
-		    }
-		  }
-
-		  // 최초 로딩 시 실행
-		  syncFixedSectionHeight();
-
-		  // 윈도우 크기 변경 시에도 다시 실행
-		  $(window).on('resize', function() {
-		    syncFixedSectionHeight();
-		  });
-
 		  //기능설명 제이쿼리--start
 		  $('.circle').click(function() {
 	        // 클릭된 .circle 요소의 인덱스를 구함
