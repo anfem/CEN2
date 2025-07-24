@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common-en.css">
 	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -21,6 +21,20 @@
 
 		    let $main = $('.main_slider');
 		    let $thumb = $('.thumb_slider');
+
+			$('#MainSlideSection').slick({
+		        adaptiveHeight: false,
+		        slidesToShow: 1,
+		        arrows: false,
+		        autoplay: true,
+		        autoplaySpeed: 3000,
+		        infinite: true,
+		        fade: true,
+		        cssEase: 'ease-in-out',
+		        speed: 2000,
+		        pauseOnHover: false,
+		        dots: true
+		      });
 
 			$('.slice_area_01').slick({
       			adaptiveHeight: true,
@@ -70,21 +84,20 @@
 								<span>회사소개</span>
 								<img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
-								<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
-								<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
-								<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
-								<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+								<li><a href="./new_about_us.html" lang="ko">회사개요</a></li>
+								<li><a href="./new_about_us.html" lang="ko">조직도</a></li>
+								<li><a href="./new_about_us.html" lang="ko">연혁</a></li>
+								<li><a href="./new_about_us.html" lang="ko">오시는 길</a></li>
 							</ul>
 						</li>
 						<li>
 							<div class="m_menu_title"><span>사업분야</span><img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
-								<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
-								<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
-								<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
-								<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
-								<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
-								<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
+								<li><a href="./new_business_dron.html">드론 종합 관제</a></li>
+								<li><a href="./new_business_control.html">교통 및 시설 관제</a></li>
+								<li><a href="./new_business_bigdata.html">빅데이터 ML</a></li>
+								<li><a href="./new_business_si_sm.html">SI & SM</a></li>
+								<li><a href="./new_business_cert.html">인증솔루션</a></li>
 							</ul>
 						</li>
 						<li>
@@ -100,9 +113,9 @@
 						<li>
 							<div class="m_menu_title"><span>연구개발</span><img src="./images/down_arrow.svg" alt=""></div>
 							<ul>
-								<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
+								<li><a href="./new_Development_Construction.html">건설기계 전동화 과제</a></li>
 								<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
-								<li><a href="./sub_Development_PHY.html">초고속 위성통신 PHY 통합 응용 플랫폼</a></li>
+								<li><a href="./sub_Development_PHY.html">초고속 위성통신 응용 플랫폼</a></li>
 							</ul>
 						</li>
 						<li>
@@ -130,10 +143,10 @@
 				</div>
 				<div class="nb_wrap">
 					<ul>
-						<li><a href="./sub_about_us.html">회사소개</a></li>
-						<li><a href="./sub_Business_IoT.html">사업분야</a></li>
+						<li><a href="./new_about_us.html">회사소개</a></li>
+						<li><a href="./new_business_dron.html">사업분야</a></li>
 						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
-						<li><a href="./sub_Development_Construction">연구개발</a></li>
+						<li><a href="./new_Development_Construction.html">연구개발</a></li>
 						<li><a href="./promotion_Certification.html">홍보센터</a></li>
 					</ul>
 				</div>
@@ -150,19 +163,18 @@
 			<div class="sub_menu">
 				<!--ABOUT US-->
 				<ul>
-					<li><a href="./sub_about_us.html" lang="ko">회사개요</a></li>
-					<li><a href="./sub_about_us.html" lang="ko">연혁</a></li>
-					<li><a href="./sub_about_us.html" lang="ko">조직도</a></li>
-					<li><a href="./sub_about_us.html" lang="ko">오시는 길</a></li>
+					<li><a href="./new_about_us.html" lang="ko">회사개요</a></li>
+					<li><a href="./new_about_us.html" lang="ko">조직도</a></li>
+					<li><a href="./new_about_us.html" lang="ko">연혁</a></li>
+					<li><a href="./new_about_us.html" lang="ko">오시는 길</a></li>
 				</ul>
 				<!--사업분야-->
 				<ul>
-					<li><a href="./sub_Business_IoT.html">IoT종합관제</a></li>
-					<li><a href="./sub_Business_bigdata.html">빅데이터</a></li>
-					<li><a href="./sub_Business_Smart_Drone.html">Smart Dron & Road</a></li>
-					<li><a href="./sub_Business_SI_SM.html">공공기관 SI & SM</a></li>
-					<li><a href="./sub_Business_Certification.html">인증솔루션</a></li>
-					<li><a href="./sub_Business_AI.html">AI 교육사업부</a></li>
+					<li><a href="./new_business_dron.html">드론 종합 관제</a></li>
+					<li><a href="./new_business_control.html">교통 및 시설 관제</a></li>
+					<li><a href="./new_business_bigdata.html">빅데이터 ML</a></li>
+					<li><a href="./new_business_si_sm.html">SI & SM</a></li>
+					<li><a href="./new_business_cert.html">인증솔루션</a></li>
 				</ul>
 				<!--솔루션-->
 				<ul>
@@ -174,9 +186,9 @@
 				</ul>
 				<!--연구개발-->
 				<ul>
-					<li><a href="./sub_Development_Construction.html">건설기계 전동화 과제</a></li>
-					<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
-					<li><a href="./sub_Development_PHY.html">초고속 위성통신 PHY 통합 응용 플랫폼</a></li>
+					<li><a href="./new_Development_Construction.html">건설기계 전동화 과제</a></li>
+					<li><a href="./sub_Development_Safety.html">비가청 기술 안전 솔루션</a></li>
+					<li><a href="./sub_Development_PHY.html">초고속 위성통신 응용 플랫폼</a></li>
 				</ul>
 				<!--홍보센터-->
 				<ul>
@@ -193,7 +205,13 @@
 				<h1>씨이엔코퍼레이션</h1>
 				<h3>이 만들어 가겠습니다.</h3>
 			</div>
-			<div class="bg-video" style="background:skyblue;">
+			<div id="MainSlideSection">
+				<div class="slide_wrap slia_img1">
+				</div>
+				<div class="slide_wrap slia_img2">
+				</div>
+				<div class="slide_wrap slia_img3">
+				</div>
 			</div>
 		</div>
 
@@ -296,7 +314,7 @@
 			</div>
 		</div>
 
-		<div id="section5">
+		<!-- <div id="section5">
 			<div class="press_release">
 				<div class="content_wrap">
 					<div class="img_area">
@@ -351,7 +369,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 				<div id="section8">
 			<div class="Partner_contents">
@@ -364,6 +382,7 @@
 						<a href="https://www.mqnic.com/"><img src="./images/partner/Mqunic.svg" alt=""></a>
 						<a href="https://globaltelecom.co.kr/kr/"><img src="./images/partner/Globaltelecom.png" alt=""></a>
 						<a href="https://www.milipass.kr/main.html"><img src="./images/partner/KSICA.png" alt=""></a>
+						<a href="https://http://www.utinfo.co.kr/html/"><img src="./images/partner/UT.png" alt=""></a>
 						<a href="https://real-data.kr/"><img src="./images/partner/realdata.png" alt=""></a>
 						<a href="https://www.markany.com/"><img src="./images/partner/markany.png" alt=""></a>
 						<a href="https://www.ssrinc.co.kr/"><img src="./images/partner/ssr.svg" alt=""></a>
@@ -384,11 +403,9 @@
 						<a href="https://www.etri.re.kr/kor/main/main.etri"><img src="./images/customer/ETRI.svg" alt=""></a>
 						<a href="https://www.police.go.kr/index.do"><img src="./images/customer/police.png" alt=""></a>
 						<a href="https://www.army.mil.kr/sites/army/index.do"><img src="./images/customer/army.png" alt=""></a>
-						<a href="https://rokaf.airforce.mil.kr/sites/airforce/index.do"><img src="./images/customer/airforce.png" alt=""></a>
 						<a href="https://www.koroad.or.kr/"><img src="./images/customer/koroad.png" alt=""></a>
 						<a href="https://main.kotsa.or.kr/main.do"><img src="./images/customer/TS.svg" alt=""></a>
 						<a href="https://www.saerom.co.kr/homev6/index.html"><img src="./images/customer/jeonnam.png" alt=""></a>
-						<a href="https://www.gntp.or.kr/"><img src="./images/customer/kyungnam.png" alt=""></a>
 						<a href="https://tjy.co.kr/"><img src="./images/customer/IBK.svg" alt=""></a>
 						<a href="https://tjy.co.kr/"><img src="./images/customer/kium.png" alt=""></a>
 						<a href="https://tjy.co.kr/"><img src="./images/customer/dongseo.png" alt=""></a>

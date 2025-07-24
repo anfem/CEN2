@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CEN코퍼레이션</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 모바일 메뉴 -->
+		<div id="mobile_menu_bg">
+			<div class="mobile_menu_wrap">
+				<div class="menu_top">
+					<div class="mobile_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</div>
+					<div class="close_btn"><img src="./images/close_btn.svg" alt=""></div>
+				</div>
+				<div class="m_menu_contents">
+					<ul>
+						<li>
+							<div class="m_menu_title">
+								<span>회사소개</span>
+								<img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./new_about_us.html" lang="ko">회사개요</a></li>
+								<li><a href="./new_about_us.html" lang="ko">조직도</a></li>
+								<li><a href="./new_about_us.html" lang="ko">연혁</a></li>
+								<li><a href="./new_about_us.html" lang="ko">오시는 길</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>사업분야</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./new_business_dron.html">드론 종합 관제</a></li>
+								<li><a href="./new_business_control.html">교통 및 시설 관제</a></li>
+								<li><a href="./new_business_bigdata.html">빅데이터 ML</a></li>
+								<li><a href="./new_business_si_sm.html">SI & SM</a></li>
+								<li><a href="./new_business_cert.html">인증솔루션</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>솔루션</span><img src="./images/down_arrow.svg" alt=""></div>		
+							<ul>
+								<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+								<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+								<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+								<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+								<li><a href="./sub_solution_dron.html">드론관제</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>연구개발</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./new_Development_Construction.html">건설기계 전동화 과제</a></li>
+								<li><a href="./sub_Development_Safety.html">비가청 기술 안전솔루션</a></li>
+								<li><a href="./sub_Development_PHY.html">초고속 위성통신 응용 플랫폼</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="m_menu_title"><span>홍보센터</span><img src="./images/down_arrow.svg" alt=""></div>
+							<ul>
+								<li><a href="./promotion_Certification.html">인증현황</a></li>
+								<li><a href="./promotion_person.html">인재채용</a></li>
+							</ul>	
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!------글로벌 네비------->
+		<header id="gnb">
+			<div class="gnb_wrap">
+				<div id="logo">
+					<a href="./index.html" class="def_logo">
+						<img src="./images/logo_w.svg" alt="CEN코퍼레이션 화이트">
+					</a>
+					<a href="./index.html" class="tra_logo">
+						<img src="./images/logo_c.svg" alt="CEN코퍼레이션 원본">
+					</a>
+				</div>
+				<div class="nb_wrap">
+					<ul>
+						<li><a href="./new_about_us.html">회사소개</a></li>
+						<li><a href="./new_business_dron.html">사업분야</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">솔루션</a></li>
+						<li><a href="./new_Development_Construction.html">연구개발</a></li>
+						<li><a href="./promotion_Certification.html">홍보센터</a></li>
+					</ul>
+				</div>
+				<div class="right_box">
+					<a href="./en_page/en_index.html" class="transrate">
+						<img src="./images/earth_ico.svg" alt="">
+						<span>EN</span>
+					</a>
+					<div class="mobile_menu">
+						<img src="./images/menu_icon.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="sub_menu">
+				<!--ABOUT US-->
+				<ul>
+					<li><a href="./new_about_us.html" lang="ko">회사개요</a></li>
+					<li><a href="./new_about_us.html" lang="ko">조직도</a></li>
+					<li><a href="./new_about_us.html" lang="ko">연혁</a></li>
+					<li><a href="./new_about_us.html" lang="ko">오시는 길</a></li>
+				</ul>
+				<!--사업분야-->
+				<ul>
+					<li><a href="./new_business_dron.html">드론 종합 관제</a></li>
+					<li><a href="./new_business_control.html">교통 및 시설 관제</a></li>
+					<li><a href="./new_business_bigdata.html">빅데이터 ML</a></li>
+					<li><a href="./new_business_si_sm.html">SI & SM</a></li>
+					<li><a href="./new_business_cert.html">인증솔루션</a></li>
+				</ul>
+				<!--솔루션-->
+				<ul>
+					<li><a href="./sub_solution_CENPlus_c.html">CENPlus</a></li>
+					<li><a href="./sub_solution_Web_RTC.html">WebRTC</a></li>
+					<li><a href="./sub_solution_AutoML_c.html">AUTO ML</a></li>
+					<li><a href="./sub_solution_Edge_device_c.html">Edge 디바이스 관제</a></li>
+					<li><a href="./sub_solution_dron.html">드론관제</a></li>
+				</ul>
+				<!--연구개발-->
+				<ul>
+					<li><a href="./new_Development_Construction.html">건설기계 전동화 과제</a></li>
+					<li><a href="./sub_Development_Safety.html">비가청 기술 안전 솔루션</a></li>
+					<li><a href="./sub_Development_PHY.html">초고속 위성통신 응용 플랫폼</a></li>
+				</ul>
+				<!--홍보센터-->
+				<ul>
+					<li><a href="./promotion_Certification.html">인증현황</a></li>
+					<li><a href="./promotion_person.html">인재채용</a></li>
+				</ul>
+			</div>
+		</header>
+		<!------글로벌 네비END------->
+
+		<div class="SubBg company_info">
+			<div class="text_area">
+				<h1>ABOUT US</h1>
+			</div>
+		</div>
+
+		<div class="company_section1">
+			<div class="company_title">
+				<h1 data-aos="fade-left" data-aos-delay="0" data-aos-duration="1200"><span class="point_t">Cross</span><br><span class="point_t">Effective</span> <span class="small_t">Technology for</span><br><span class="point_t">Next</span></h1>
+				<p data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200"><span class="point_t">씨이엔코퍼레이션(주)</span> 다종다양한 요구를<br class="m_br"> 심층적으로 도출하여 핵심을 관통하는<br>시스템과 솔루션을 <span class="point_t">개발</span>하여 제공함으로써,<br>휴먼과 인공지공 그리고 시스템간 최상의 조합을<br class="m_br">  제공하여 현재와 <span class="point_t">미래</span><br>그리고 고객에게 최고의 <span class="point_t">가치</span>를 제공합니다.</p>
+			</div>
+		</div>
+
+		<div class="company_section2">
+			<div class="center_title">
+				<span>Organization</span><br>
+				<h3>조직도</h3>
+			</div>
+			<div class="orga_wrap" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200">
+				<div class="radius_box ceo">
+					<p>CEO</p>
+					<div class="column_line"></div>
+				</div>
+				<div class="paddign_box">
+					<div class="orga_center_line"></div>
+				</div>
+				<div class="other_wrap">
+					<div class="flx_line">
+						<div class="radius_box mana">
+							<p>비지니스 부문</p>
+						</div>
+						<div class="radius_box">
+							<p>메타플랫폼</p>
+						</div>
+						<div class="radius_box">
+							<p>AI 융합</p>
+						</div>
+						<div class="radius_box">
+							<p>SI & SM</p>
+						</div>
+						<div class="column_line"></div>
+					</div>
+
+					<div class="flx_line">
+						<div class="radius_box mana">
+						<p>RND 연구소</p>
+						</div>
+						<div class="radius_box">
+							<p>WebRCT</p>
+						</div>
+						<div class="radius_box big">
+							<p>PHY<br class="m_br"> RTOS 연구</p>
+						</div>
+						<div class="radius_box big">
+							<p>AI 협업<br class="m_br">서비스 연구</p>
+						</div>
+						<div class="column_line"></div>
+					</div>
+				
+					<div class="flx_line">
+						<div class="radius_box mana">
+							<p>비지니스 부문</p>
+						</div>
+						<div class="column_line"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="company_section3">
+			<div class="center_title">
+				<span>Company History</span><br>
+				<h3>회사 연혁</h3>
+			</div>
+
+			<div class="history_wrap">
+				<div class="his_line">
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2025</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+							<div class="his_center_line long"></div>
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>벤처기업인증 재확인</p>
+							<p>ISO 27001(정보보안경영시스템) 인증 갱신</p>
+						</div>
+					</div>
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2023</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+							<div class="his_center_line long"></div>
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>ISO 14001(환경경영시스템)</p>
+							<p>ISO 27001(정보보안경영시스템) 인증</p>
+							<p>ISO 9001(품질경영시스템)</p>
+						</div>
+					</div>
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2022</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+							<div class="his_center_line"></div>
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>벤처기업 재확인 전문연구사업자 신고 인증</p>
+						</div>
+					</div>
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2021</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+							<div class="his_center_line"></div>
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>스마트시티 통합플랫폼 인증(TTA Certified)</p>
+						</div>
+					</div>
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2018</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+							<div class="his_center_line"></div>
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>벤처기업인증</p>
+						</div>
+					</div>
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2017</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+							<div class="his_center_line"></div>
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>기업부설연구소 설립</p>
+						</div>
+					</div>
+					<div class="point_section">
+						<h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200" data-aos-anchor-placement="top-center">2016</h1>
+						<div class="point_out" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-anchor-placement="top-center">
+							<img src="./images/history_point.svg" alt="">
+						</div>
+						<div class="his_info" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200" data-aos-anchor-placement="top-center">
+							<p>씨이엔코퍼레이션(주) 설립</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="company_section4">
+			<div class="center_title">
+				<span>Directions</span><br>
+				<h3>오시는길</h3>
+			</div>
+			<div class="map_section">
+				<div class="map_area">
+					<div class="map_wrap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12698.578869828463!2d127.1070178257283!3d37.27985116067877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b457d71b80347%3A0x9e437d5e8346d645!2z7JSo7J207JeU7L2U7Y2866CI7J207IWYKOyjvCk!5e0!3m2!1sko!2skr!4v1747644042867!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+
+				<ul class="information_items">
+					<li><img src="./images/mdi_map-marker.svg" alt=""><span>경기도 용인시 기흥구 기흥로 58,B동 1105-1106호 <br class="m_br">(기흥ICT밸리 SKV1)</span></il>
+					<li><img src="./images/ion_call-sharp.svg" alt=""><span>031-8067-8633</span></il>
+					<li><img src="./images/cil_fax.svg" alt=""><span>031-8067-8634</span></il>
+				</ul>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer_wrap">
+				<div class="left_cotents footer_item">
+					<div class="logo">
+						<img src="./images/logo_w.svg" alt="">
+					</div>
+					<span>© 2025 CEN Corporation Inc. All rights reserved.</span>
+					<div class="adress">
+						<h3>Address</h3>
+						<p>경기도 용인시 기흥구 기흥로 58 기흥 ICT밸리 SKV1 B동 1105, 1106호</p>
+					</div>
+				</div>
+				<div class="medle_cotents footer_item">
+					<h3>CEN Corporation</h3>
+					<ul>
+						<li><a href="./sub_about_us.html">ABOUT US</a></li>
+						<li><a href="./sub_Business_IoT.html">BUSINESS</a></li>
+						<li><a href="./sub_solution_CENPlus_c.html">SOLUTION</a></li>
+						<li><a href="./sub_Development_Construction.html">DEVELOPMENT</a></li>
+					</ul>
+				</div>
+				<div class="right_cotents footer_item">
+					<div class="call">
+						<h3>Call</h3>
+						<p><span>Tel</span> +82(0)31-8067-8633</p>
+						<p><span>Fax</span> +82(0)31-8067-8634</p>
+					</div>
+					<div class="email">
+						<h3>Email</h3>
+						<p>nam3305@cen-corp.co.kr</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
