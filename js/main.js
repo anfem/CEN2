@@ -96,6 +96,16 @@ menuTitles.forEach((title) => {
 });
 //모바일 메뉴 끝
 
+// 스크롤 될때 메뉴 배경색 변경 시작
+  window.addEventListener("scroll", function() {
+    const gnb = document.getElementById("gnb");
+    if (window.scrollY > 100) {
+       gnb.classList.add("scrolled");
+    } else {
+      gnb.classList.remove("scrolled");
+    }
+  });
+// 스크롤 될때 메뉴 배경색 변경 끝
 
 // oddsetX
   function alignSubMenuToNbWrapLeft() {
