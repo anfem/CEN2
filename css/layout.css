@@ -81,11 +81,8 @@
 #gnb.scrolled, #gnb.scrolled:hover {background-color: rgba(255,255,255,0.9) !important;}
 #gnb.scrolled .gnb_wrap > .nb_wrap > ul > li > a {color: #777 !important;}
 #gnb.scrolled .mobile_menu img {filter: brightness(0) saturate(100%) invert(40%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);}
-
-#gnb.scrolled:hover .gnb_wrap > .nb_wrap > ul > li > a {
-  color: #777 !important;
-}
-
+#gnb.scrolled:hover .gnb_wrap > .nb_wrap > ul > li > a {color: #777 !important;}
+#gnb.scrolled:hover .gnb_wrap > .nb_wrap > ul > li.active > a {color: #242424 !important;}
 /* 활성화된 li */
 #gnb > .gnb_wrap > .nb_wrap > ul > li.active {
   background-color: #fff; color: #242424;
