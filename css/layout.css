@@ -707,6 +707,7 @@ footer p span {font-size:14px;}
 .gr_tw_wrap {max-width:1100px; width:88.8888%; display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:80px 40px; margin:0 auto;}
 .gr_tw_wrap > .gr_tw_items {display:flex; flex-direction: column; justify-content: space-between; width:min(100%, 530px);}
 .gr_tw_wrap > .gr_tw_items > h3 {font-size:24px; color:#222; margin:0 0 24px; font-weight:600;}
+.devel_section3 > .gr_tw_wrap > .gr_tw_items > h3 {text-align: center;}
 .gr_tw_wrap > .gr_tw_items > ul {display:flex; flex-direction: column; gap:8px; margin:0 0 24px;}
 .gr_tw_wrap > .gr_tw_items > ul > li {display:flex; font-size:20px; color:#666;}
 /*ver.02 사업분야 end*/
