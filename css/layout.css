@@ -1253,7 +1253,7 @@ footer p span {font-size:14px;}
   .sub_head_title {padding:0 5.5556%;}
   .sub_head_title > h3 {font-size:24px;}
   .gr_th_wrap > .gr_th_items {gap:8px; border-radius: 8px;}
-  .center_bann_section {padding: 0 5.5556%; height:200px;}
+  .center_bann_section {padding: 0 5.5556%; height:auto;}
   .center_bann_section br {display:none;}
   .center_bann_section > p {margin:30px 0;}
   .img_info_box {width:100%;}
@@ -1282,7 +1282,7 @@ footer p span {font-size:14px;}
   .dev_grid_list > .dev_grid_items > p {font-size: clamp(14px, 2vw, 18px); margin:8px 0 0; line-height: 130%;}
 
   .devel_section3 {background:#f9f9f9; padding:60px 0 80px;}
-  .center_bann_section.deve2 {padding:60px 0; margin:40px 0;}
+  .center_bann_section.deve2 {padding:0px 0; margin:0px 0;}
   .rwap_flx_items {padding:0 5.5556%;}
   .flx_for_wrap > .flx_for_items > .line_wrap {display:flex; align-items: center; position:absolute; left:50%; top:100%; transform: translate(0, 0%);}
   .flx_for_wrap > .flx_for_items > .line_wrap > .blue_line {width:1px; height:24px; background:#3471FF;}
